@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "source": "openskimap",
+  "ski_area_id": "953aadb60d5d51d8dfc442e02049148c3c49f3e3",
+  "slug": "wengen-953aadb60d5d51d8dfc442e02049148c",
+  "resortName": "Wengen",
+  "createdAt": "2026-05-03T17:25:42.796Z",
+  "nodes": [
+    {
+      "id": "node_1",
+      "label": "Base of Skilift Wengen",
+      "lat": 47.67631926666667,
+      "lon": 10.150399966666667
+    },
+    {
+      "id": "node_2",
+      "label": "Top of Skilift Wengen",
+      "lat": 47.673598733333336,
+      "lon": 10.1526455
+    }
+  ],
+  "edges": [
+    {
+      "id": "lift_1",
+      "name": "Skilift Wengen",
+      "type": "lift",
+      "liftType": "drag_lift",
+      "occupancy": null,
+      "capacity": null,
+      "durationSeconds": null,
+      "detachable": null,
+      "bubble": null,
+      "heating": null,
+      "difficulty": "lift",
+      "directionConfidence": "lift",
+      "length_m": 378,
+      "estimatedMinutes": 1.2587317939728377,
+      "geometry": [
+        [
+          47.6764619,
+          10.1501884
+        ],
+        [
+          47.6761292,
+          10.1504732
+        ],
+        [
+          47.6751038,
+          10.1513513
+        ],
+        [
+          47.6740764,
+          10.1522311
+        ],
+        [
+          47.6735199,
+          10.1527077
+        ]
+      ],
+      "fromNode": "node_1",
+      "toNode": "node_2"
+    },
+    {
+      "id": "run_2",
+      "name": "Nebenabfahrt",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Nebenabfahrt: direction inferred from geometry order, elevation unavailable",
+      "length_m": 340,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          47.6736815,
+          10.152483
+        ],
+        [
+          47.6742667,
+          10.1516944
+        ],
+        [
+          47.6749782,
+          10.1507556
+        ],
+        [
+          47.6756429,
+          10.1503372
+        ],
+        [
+          47.6759282,
+          10.1503479
+        ],
+        [
+          47.6761921,
+          10.1505938
+        ]
+      ],
+      "fromNode": "node_2",
+      "toNode": "node_1"
+    },
+    {
+      "id": "run_3",
+      "name": "Haupabfahrt",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Haupabfahrt: direction inferred from geometry order, elevation unavailable",
+      "length_m": 354,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          47.6735948,
+          10.1527458
+        ],
+        [
+          47.6737718,
+          10.1527351
+        ],
+        [
+          47.674664,
+          10.1519895
+        ],
+        [
+          47.6758271,
+          10.1511687
+        ],
+        [
+          47.6761921,
+          10.1505938
+        ],
+        [
+          47.6763038,
+          10.1504177
+        ]
+      ],
+      "fromNode": "node_2",
+      "toNode": "node_1"
+    },
+    {
+      "id": "run_4",
+      "name": "Familienabfahrt",
+      "type": "run",
+      "difficulty": "easy",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Familienabfahrt: direction inferred from geometry order, elevation unavailable",
+      "length_m": 486,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          47.6735948,
+          10.1527458
+        ],
+        [
+          47.6738946,
+          10.1533735
+        ],
+        [
+          47.6744545,
+          10.1532125
+        ],
+        [
+          47.6748518,
+          10.1530462
+        ],
+        [
+          47.6753431,
+          10.1528639
+        ],
+        [
+          47.6759788,
+          10.152719
+        ],
+        [
+          47.676181,
+          10.1526064
+        ],
+        [
+          47.6762533,
+          10.1523811
+        ],
+        [
+          47.6762713,
+          10.1518178
+        ],
+        [
+          47.6762461,
+          10.1509595
+        ],
+        [
+          47.6763219,
+          10.1506054
+        ],
+        [
+          47.6763038,
+          10.1504177
+        ]
+      ],
+      "fromNode": "node_2",
+      "toNode": "node_1"
+    }
+  ],
+  "warnings": [
+    "Run Nebenabfahrt: direction inferred from geometry order, elevation unavailable",
+    "Run Haupabfahrt: direction inferred from geometry order, elevation unavailable",
+    "Run Familienabfahrt: direction inferred from geometry order, elevation unavailable"
+  ],
+  "stats": {
+    "nodesBeforeMerge": 6,
+    "nodesAfterMerge": 2,
+    "nodesMerged": 4,
+    "edgeCount": 4,
+    "runCount": 3,
+    "liftCount": 1,
+    "directionWarningCount": 3,
+    "unknownDifficulties": []
+  }
+}

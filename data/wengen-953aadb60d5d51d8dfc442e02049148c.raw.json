@@ -1,0 +1,359 @@
+{
+  "ski_area_id": "953aadb60d5d51d8dfc442e02049148c3c49f3e3",
+  "name": "Wengen",
+  "ski_area": {
+    "type": "Feature",
+    "properties": {
+      "id": "953aadb60d5d51d8dfc442e02049148c3c49f3e3",
+      "name": "Wengen",
+      "type": "skiArea",
+      "places": [
+        {
+          "iso3166_2": "DE-BY",
+          "localized": {
+            "en": {
+              "region": "Bavaria",
+              "country": "Germany",
+              "locality": "Weitnau"
+            }
+          },
+          "iso3166_1Alpha2": "DE"
+        }
+      ],
+      "status": "operating",
+      "sources": [
+        {
+          "id": "way/1227380465",
+          "type": "openstreetmap"
+        },
+        {
+          "id": 14489,
+          "type": "skimap.org"
+        }
+      ],
+      "websites": [
+        "https://www.skilift-wengen.de/"
+      ],
+      "activities": [
+        "downhill"
+      ],
+      "statistics": {
+        "runs": {
+          "byActivity": {
+            "downhill": {
+              "byDifficulty": {
+                "easy": {
+                  "count": 1,
+                  "lengthInKm": 0.4860145444749418,
+                  "maxElevation": 900.8,
+                  "minElevation": 801.1,
+                  "snowmakingLengthInKm": 0,
+                  "snowfarmingLengthInKm": 0,
+                  "combinedElevationChange": 99.69999999999993
+                },
+                "intermediate": {
+                  "count": 2,
+                  "lengthInKm": 0.6943450365446472,
+                  "maxElevation": 900.8,
+                  "minElevation": 801.1,
+                  "snowmakingLengthInKm": 0,
+                  "snowfarmingLengthInKm": 0,
+                  "combinedElevationChange": 190.9999999999999
+                }
+              }
+            }
+          },
+          "maxElevation": 900.8,
+          "minElevation": 801.1
+        },
+        "lifts": {
+          "byType": {
+            "drag_lift": {
+              "count": 1,
+              "lengthInKm": 0.3776200597808035,
+              "maxElevation": 902,
+              "minElevation": 798.6,
+              "combinedElevationChange": 103.39999999999998
+            }
+          },
+          "maxElevation": 902,
+          "minElevation": 798.6
+        },
+        "maxElevation": 900.8,
+        "minElevation": 801.1
+      },
+      "wikidataID": null,
+      "viewportHint": {
+        "center": [
+          10.15178095,
+          47.67499090000001
+        ],
+        "bearing": 180.6871837308763,
+        "minCameraY": -208.15345180209513,
+        "rotatedWidthMeters": 242.1517765154562,
+        "rotatedHeightMeters": 428.61511414948734
+      },
+      "runConvention": "europe"
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            10.1538659,
+            47.673833
+          ],
+          [
+            10.1530934,
+            47.67617360000001
+          ],
+          [
+            10.1502181,
+            47.6767443
+          ],
+          [
+            10.149907,
+            47.67526330000001
+          ],
+          [
+            10.1520957,
+            47.6729877
+          ],
+          [
+            10.1538659,
+            47.673833
+          ]
+        ]
+      ]
+    }
+  },
+  "fetched_at": "2026-05-03T09:16:41.977Z",
+  "source": "openskimap",
+  "runs": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "openstreetmap-way-901667768",
+          "name": "Nebenabfahrt",
+          "ref": null,
+          "type": "run",
+          "liftType": null,
+          "piste:difficulty": "intermediate",
+          "oneway": null,
+          "source": "openstreetmap-overpass",
+          "skiAreas": [
+            {
+              "properties": {
+                "id": "953aadb60d5d51d8dfc442e02049148c3c49f3e3"
+              }
+            }
+          ]
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              10.152483,
+              47.6736815
+            ],
+            [
+              10.1516944,
+              47.6742667
+            ],
+            [
+              10.1507556,
+              47.6749782
+            ],
+            [
+              10.1503372,
+              47.6756429
+            ],
+            [
+              10.1503479,
+              47.6759282
+            ],
+            [
+              10.1505938,
+              47.6761921
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "openstreetmap-way-901667769",
+          "name": "Haupabfahrt",
+          "ref": null,
+          "type": "run",
+          "liftType": null,
+          "piste:difficulty": "intermediate",
+          "oneway": null,
+          "source": "openstreetmap-overpass",
+          "skiAreas": [
+            {
+              "properties": {
+                "id": "953aadb60d5d51d8dfc442e02049148c3c49f3e3"
+              }
+            }
+          ]
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              10.1527458,
+              47.6735948
+            ],
+            [
+              10.1527351,
+              47.6737718
+            ],
+            [
+              10.1519895,
+              47.674664
+            ],
+            [
+              10.1511687,
+              47.6758271
+            ],
+            [
+              10.1505938,
+              47.6761921
+            ],
+            [
+              10.1504177,
+              47.6763038
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "openstreetmap-way-901667770",
+          "name": "Familienabfahrt",
+          "ref": null,
+          "type": "run",
+          "liftType": null,
+          "piste:difficulty": "easy",
+          "oneway": null,
+          "source": "openstreetmap-overpass",
+          "skiAreas": [
+            {
+              "properties": {
+                "id": "953aadb60d5d51d8dfc442e02049148c3c49f3e3"
+              }
+            }
+          ]
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              10.1527458,
+              47.6735948
+            ],
+            [
+              10.1533735,
+              47.6738946
+            ],
+            [
+              10.1532125,
+              47.6744545
+            ],
+            [
+              10.1530462,
+              47.6748518
+            ],
+            [
+              10.1528639,
+              47.6753431
+            ],
+            [
+              10.152719,
+              47.6759788
+            ],
+            [
+              10.1526064,
+              47.676181
+            ],
+            [
+              10.1523811,
+              47.6762533
+            ],
+            [
+              10.1518178,
+              47.6762713
+            ],
+            [
+              10.1509595,
+              47.6762461
+            ],
+            [
+              10.1506054,
+              47.6763219
+            ],
+            [
+              10.1504177,
+              47.6763038
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "lifts": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "openstreetmap-way-175591147",
+          "name": "Skilift Wengen",
+          "ref": null,
+          "type": "lift",
+          "liftType": "drag_lift",
+          "piste:difficulty": null,
+          "oneway": null,
+          "source": "openstreetmap-overpass",
+          "skiAreas": [
+            {
+              "properties": {
+                "id": "953aadb60d5d51d8dfc442e02049148c3c49f3e3"
+              }
+            }
+          ]
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              10.1501884,
+              47.6764619
+            ],
+            [
+              10.1504732,
+              47.6761292
+            ],
+            [
+              10.1513513,
+              47.6751038
+            ],
+            [
+              10.1522311,
+              47.6740764
+            ],
+            [
+              10.1527077,
+              47.6735199
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "slug": "wengen-953aadb60d5d51d8dfc442e02049148c"
+}

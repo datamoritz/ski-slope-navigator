@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SlopeNavigator</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIINfQPDLA8f6GfyJEfZFYhR4ZjH8E6iGXI="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="app-header">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="peak peak-left"></span>
+            <span class="peak peak-right"></span>
+            <span class="ski-track track-one"></span>
+            <span class="ski-track track-two"></span>
+          </span>
+          <div>
+            <p class="eyebrow">Local route planner</p>
+            <h1>SlopeNavigator</h1>
+          </div>
+        </div>
+        <button id="homeButton" class="icon-button" title="Resorts" aria-label="Resorts">⌂</button>
+      </header>
+
+      <section id="viewSelector" class="view active">
+        <div class="panel search-panel">
+          <label for="searchInput">Resort name</label>
+          <div class="search-row">
+            <input id="searchInput" type="search" autocomplete="off" placeholder="Wengen, Mürren, Copper..." />
+            <button id="searchButton">Search</button>
+          </div>
+          <p id="searchStatus" class="status"></p>
+          <div id="searchResults" class="result-list"></div>
+        </div>
+
+        <div class="panel">
+          <div class="section-head">
+            <h2>Cached Resorts</h2>
+            <button id="refreshCached" class="small-button" title="Refresh cached resorts" aria-label="Refresh cached resorts">↻</button>
+          </div>
+          <div id="cachedResorts" class="cached-list"></div>
+        </div>
+
+        <button class="upload-placeholder" disabled>Upload Pistenplan · Coming in v2</button>
+      </section>
+
+      <section id="mapPanel" class="map-panel hidden" aria-label="Resort map">
+        <div class="map-toolbar">
+          <div>
+            <p class="eyebrow">Resort map</p>
+            <h2 id="mapTitle">Runs and lifts</h2>
+          </div>
+          <div class="map-legend" aria-label="Map legend">
+            <span><i class="legend-line lift"></i>Lift</span>
+            <span><i class="legend-line easy"></i>Easy</span>
+            <span><i class="legend-line intermediate"></i>Intermediate</span>
+            <span><i class="legend-line advanced"></i>Advanced</span>
+            <span><i class="legend-line expert"></i>Expert</span>
+            <span><i class="legend-line route"></i>Route</span>
+          </div>
+        </div>
+        <div class="map-controls">
+          <div class="pick-status" id="pickStatus">Click a dot to set START, then click another dot for TARGET.</div>
+        </div>
+        <div id="resortMap" class="resort-map"></div>
+        <p id="mapStatus" class="status"></p>
+      </section>
+
+      <section id="viewLoaded" class="view">
+        <div class="loaded-header">
+          <div>
+            <p class="eyebrow">Loaded resort</p>
+            <h2 id="resortTitle">Resort</h2>
+          </div>
+          <a id="debugLink" class="debug-link" href="#" target="_blank" rel="noreferrer">debug</a>
+        </div>
+
+        <div id="stats" class="stats"></div>
+
+        <div class="panel route-panel">
+          <div class="field-grid">
+            <label>
+              From
+              <select id="fromSelect"></select>
+            </label>
+            <label>
+              To
+              <select id="toSelect"></select>
+            </label>
+          </div>
+
+          <fieldset class="preference-group">
+            <legend>Preference</legend>
+            <label><input type="radio" name="preference" value="easiest" checked /> Easiest</label>
+            <label><input type="radio" name="preference" value="fastest" /> Fastest</label>
+            <label><input type="radio" name="preference" value="scenic" /> Scenic</label>
+          </fieldset>
+
+          <button id="routeButton" class="primary">Find Route</button>
+          <p id="routeStatus" class="status"></p>
+        </div>
+      </section>
+
+      <section id="viewResult" class="view">
+        <div class="result-head">
+          <div>
+            <p class="eyebrow">Route result</p>
+            <h2 id="routeTitle">Suggested route</h2>
+          </div>
+          <button id="anotherRoute" class="small-button">Plan another route</button>
+        </div>
+
+        <div id="summary" class="summary"></div>
+        <div id="routeWarning" class="warning hidden">⚠ some run directions are estimated</div>
+        <ol id="steps" class="steps"></ol>
+      </section>
+
+      <p class="credit-line">Idea by Rio Thorsten. AI supported development by Moritz Knodler.</p>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
