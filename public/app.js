@@ -25,8 +25,11 @@ const els = {
   resortTitle: document.querySelector("#resortTitle"),
   stats: document.querySelector("#stats"),
   debugLink: document.querySelector("#debugLink"),
+  fromInput: document.querySelector("#fromInput"),
+  toInput: document.querySelector("#toInput"),
   fromSelect: document.querySelector("#fromSelect"),
   toSelect: document.querySelector("#toSelect"),
+  nodeOptions: document.querySelector("#nodeOptions"),
   routeButton: document.querySelector("#routeButton"),
   routeStatus: document.querySelector("#routeStatus"),
   routeTitle: document.querySelector("#routeTitle"),
@@ -408,6 +411,17 @@ function findNode(id) {
   return state.mapData?.nodes.find((node) => node.id === id);
 }
 
+function nodeById(id) {
+  return state.nodes.find((node) => node.id === id);
+}
+
+function syncNodeInputs() {
+  const from = nodeById(els.fromSelect.value);
+  const to = nodeById(els.toSelect.value);
+  els.fromInput.value = from?.label || "";
+  els.toInput.value = to?.label || "";
+}
+
 function addSelectionMarker(node, kind) {
   if (!node) return;
   const color = kind === "start" ? "#16a34a" : "#dc2626";
@@ -435,6 +449,7 @@ function highlightSelection() {
   state.selectionLayer.clearLayers();
   addSelectionMarker(findNode(els.fromSelect.value), "start");
   addSelectionMarker(findNode(els.toSelect.value), "end");
+  syncNodeInputs();
   updatePickStatus();
 }
 
@@ -576,14 +591,38 @@ function renderStats(resort) {
 }
 
 function populateNodeSelects(nodes) {
-  const options = nodes
-    .slice()
-    .sort((a, b) => a.label.localeCompare(b.label))
-    .map((node) => `<option value="${escapeAttr(node.id)}">${escapeHtml(node.label)}</option>`)
-    .join("");
+  const sorted = nodes.slice().sort((a, b) => a.label.localeCompare(b.label));
+  const options = sorted.map((node) => `<option value="${escapeAttr(node.id)}">${escapeHtml(node.label)}</option>`).join("");
   els.fromSelect.innerHTML = options;
   els.toSelect.innerHTML = options;
+  els.nodeOptions.innerHTML = sorted.map((node) => `<option value="${escapeAttr(node.label)}"></option>`).join("");
   if (nodes.length > 1) els.toSelect.selectedIndex = 1;
+  syncNodeInputs();
+}
+
+function resolveNodeSearch(value) {
+  const query = value.trim().toLowerCase();
+  if (!query) return null;
+  return (
+    state.nodes.find((node) => node.label.toLowerCase() === query) ||
+    state.nodes.find((node) => node.label.toLowerCase().includes(query))
+  );
+}
+
+function applyNodeSearch(kind) {
+  const input = kind === "from" ? els.fromInput : els.toInput;
+  const select = kind === "from" ? els.fromSelect : els.toSelect;
+  const node = resolveNodeSearch(input.value);
+  if (!node) {
+    setStatus(els.routeStatus, `No matching ${kind === "from" ? "start" : "target"} location.`);
+    return false;
+  }
+  select.value = node.id;
+  input.value = node.label;
+  state.routeLayer?.clearLayers();
+  highlightSelection();
+  setStatus(els.routeStatus, "");
+  return true;
 }
 
 async function loadCachedResorts() {
@@ -631,6 +670,7 @@ async function openCached(slug) {
 
 async function findRoute() {
   if (!state.resort) return;
+  if (!applyNodeSearch("from") || !applyNodeSearch("to")) return;
   const preference = document.querySelector("input[name='preference']:checked").value;
   setStatus(els.routeStatus, "Finding route...");
   try {
@@ -732,6 +772,20 @@ els.fromSelect.addEventListener("change", () => {
 els.toSelect.addEventListener("change", () => {
   state.routeLayer?.clearLayers();
   highlightSelection();
+});
+els.fromInput.addEventListener("change", () => applyNodeSearch("from"));
+els.toInput.addEventListener("change", () => applyNodeSearch("to"));
+els.fromInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    applyNodeSearch("from");
+  }
+});
+els.toInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    applyNodeSearch("to");
+  }
 });
 
 loadCachedResorts();

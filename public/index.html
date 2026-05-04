@@ -89,13 +89,16 @@
           <div class="field-grid">
             <label>
               From
-              <select id="fromSelect"></select>
+              <input id="fromInput" class="node-search" type="search" list="nodeOptions" autocomplete="off" placeholder="Search start location..." />
+              <select id="fromSelect" class="node-select" aria-label="From location"></select>
             </label>
             <label>
               To
-              <select id="toSelect"></select>
+              <input id="toInput" class="node-search" type="search" list="nodeOptions" autocomplete="off" placeholder="Search target location..." />
+              <select id="toSelect" class="node-select" aria-label="To location"></select>
             </label>
           </div>
+          <datalist id="nodeOptions"></datalist>
 
           <fieldset class="preference-group">
             <legend>Preference</legend>

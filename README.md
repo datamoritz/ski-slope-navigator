@@ -45,6 +45,25 @@ After a resort loads, the server logs graph quality:
 [slug] graph built: X nodes (Y merged), Z edges (W runs, V lifts), D direction warnings
 ```
 
+## Path Finding with Dijkstra
+
+SlopeNavigator converts each resort into a directed graph before routing:
+
+- Nodes are snapped resort locations such as lift bases, lift tops, run endpoints, and junctions.
+- Lift edges point uphill from base to top.
+- Run edges point downhill from top to bottom when direction or elevation data is available.
+- If run direction is missing, the graph uses the GeoJSON coordinate order and marks that edge as inferred.
+
+The `/api/route` endpoint runs Dijkstra's algorithm from the selected start node to the target node. It keeps the cheapest known cost for every reachable node, repeatedly visits the currently cheapest unvisited node, relaxes each outgoing lift/run edge, and stores the previous edge so the final ordered route can be reconstructed.
+
+The edge cost depends on the selected route preference:
+
+- `easiest`: difficulty weight times edge length, so harder runs are strongly penalized.
+- `fastest`: estimated travel minutes.
+- `scenic`: an augmented Dijkstra state tracks seen run difficulties and rewards variety while penalizing repeated colors.
+
+If strict routing cannot find a path, the app retries with a conservative fallback that reverses only runs whose direction was inferred from incomplete OpenSkiMap data. This helps avoid false "no route" results caused by missing elevation/direction tags while still keeping lift travel one-way uphill.
+
 ## API
 
 - `GET /api/search?q=<name>`
@@ -56,4 +75,4 @@ After a resort loads, the server logs graph quality:
 
 ## Scope
 
-v1 intentionally excludes map rendering, PDF/image upload, Anthropic extraction, user accounts, North American difficulty mode, and live lift status.
+v1 intentionally excludes PDF/image upload, Anthropic extraction, user accounts, North American difficulty mode, and live lift status.

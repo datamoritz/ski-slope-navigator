@@ -39,9 +39,45 @@ function route(graph, from, to, preference = "easiest") {
   if (!graph.nodes.some((node) => node.id === to)) {
     return { steps: [], totalLifts: 0, totalRuns: 0, totalMinutes: 0, warnings: [`Unknown destination node: ${to}`] };
   }
+  if (from === to) {
+    return { steps: [], totalLifts: 0, totalRuns: 0, totalMinutes: 0, warnings: ["Start and target are the same location."] };
+  }
 
-  if (preference === "scenic") return scenicRoute(graph, from, to);
-  return simpleRoute(graph, from, to, preference);
+  const primary = preference === "scenic" ? scenicRoute(graph, from, to) : simpleRoute(graph, from, to, preference);
+  if (primary.steps.length || !isDisconnected(primary)) return primary;
+
+  const fallbackGraph = graphWithReversibleInferredRuns(graph);
+  const fallback = preference === "scenic" ? scenicRoute(fallbackGraph, from, to) : simpleRoute(fallbackGraph, from, to, preference);
+  if (!fallback.steps.length) return primary;
+
+  return {
+    ...fallback,
+    warnings: Array.from(
+      new Set([
+        "Used estimated run direction fallback for one or more slopes. OpenSkiMap direction data may be incomplete.",
+        ...fallback.warnings,
+      ])
+    ),
+  };
+}
+
+function isDisconnected(result) {
+  return result.warnings.some((warning) => /No connected|No connected scenic/.test(warning));
+}
+
+function graphWithReversibleInferredRuns(graph) {
+  const reverseEdges = graph.edges
+    .filter((edge) => edge.type === "run" && edge.directionConfidence === "inferred")
+    .map((edge) => ({
+      ...edge,
+      id: edge.id,
+      fromNode: edge.toNode,
+      toNode: edge.fromNode,
+      geometry: Array.isArray(edge.geometry) ? edge.geometry.slice().reverse() : edge.geometry,
+      estimatedMinutes: (edge.estimatedMinutes || 1) * 1.1,
+      directionWarning: `Run ${edge.name}: route used opposite of inferred direction because elevation data is unavailable`,
+    }));
+  return { ...graph, edges: [...graph.edges, ...reverseEdges] };
 }
 
 function simpleRoute(graph, from, to, preference) {
