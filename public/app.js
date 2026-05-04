@@ -24,7 +24,6 @@ const els = {
   refreshCached: document.querySelector("#refreshCached"),
   resortTitle: document.querySelector("#resortTitle"),
   stats: document.querySelector("#stats"),
-  debugLink: document.querySelector("#debugLink"),
   fromInput: document.querySelector("#fromInput"),
   toInput: document.querySelector("#toInput"),
   fromSelect: document.querySelector("#fromSelect"),
@@ -570,7 +569,6 @@ async function loadResort(id, name) {
 async function openResort(resort) {
   state.resort = resort;
   els.resortTitle.textContent = resort.name;
-  els.debugLink.href = `/api/debug/${encodeURIComponent(resort.slug)}`;
   renderStats(resort);
   setStatus(els.routeStatus, "Loading locations...");
   state.nodes = await api(`/api/resort/${encodeURIComponent(resort.slug)}/nodes`);

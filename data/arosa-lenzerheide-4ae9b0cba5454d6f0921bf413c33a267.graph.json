@@ -4,7 +4,7 @@
   "ski_area_id": "4ae9b0cba5454d6f0921bf413c33a267f1d63cca",
   "slug": "arosa-lenzerheide-4ae9b0cba5454d6f0921bf413c33a267",
   "resortName": "Arosa Lenzerheide",
-  "createdAt": "2026-05-04T17:34:51.889Z",
+  "createdAt": "2026-05-04T17:57:25.629Z",
   "nodes": [
     {
       "id": "node_1",
@@ -70617,6 +70617,321 @@
       ],
       "fromNode": "node_251",
       "toNode": "node_437"
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 111,
+      "estimatedMinutes": 0.5,
+      "id": "connector_1",
+      "fromNode": "node_285",
+      "toNode": "node_3",
+      "geometry": [
+        [
+          46.8012681,
+          9.5974561
+        ],
+        [
+          46.800276561393275,
+          9.597277838391648
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 91,
+      "estimatedMinutes": 0.5,
+      "id": "connector_2",
+      "fromNode": "node_9",
+      "toNode": "node_85",
+      "geometry": [
+        [
+          46.74934713333334,
+          9.538460766666667
+        ],
+        [
+          46.7492677,
+          9.5372724
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 114,
+      "estimatedMinutes": 0.5,
+      "id": "connector_3",
+      "fromNode": "node_31",
+      "toNode": "node_140",
+      "geometry": [
+        [
+          46.7251767,
+          9.5462897
+        ],
+        [
+          46.7253591,
+          9.544818
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 114,
+      "estimatedMinutes": 0.5,
+      "id": "connector_4",
+      "fromNode": "node_140",
+      "toNode": "node_31",
+      "geometry": [
+        [
+          46.7253591,
+          9.544818
+        ],
+        [
+          46.7251767,
+          9.5462897
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 84,
+      "estimatedMinutes": 0.5,
+      "id": "connector_5",
+      "fromNode": "node_31",
+      "toNode": "node_338",
+      "geometry": [
+        [
+          46.7251767,
+          9.5462897
+        ],
+        [
+          46.7251828,
+          9.547389200000001
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 84,
+      "estimatedMinutes": 0.5,
+      "id": "connector_6",
+      "fromNode": "node_338",
+      "toNode": "node_31",
+      "geometry": [
+        [
+          46.7251828,
+          9.547389200000001
+        ],
+        [
+          46.7251767,
+          9.5462897
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 104,
+      "estimatedMinutes": 0.5,
+      "id": "connector_7",
+      "fromNode": "node_33",
+      "toNode": "node_35",
+      "geometry": [
+        [
+          46.7480918,
+          9.57142895
+        ],
+        [
+          46.74878,
+          9.5723483
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 104,
+      "estimatedMinutes": 0.5,
+      "id": "connector_8",
+      "fromNode": "node_35",
+      "toNode": "node_33",
+      "geometry": [
+        [
+          46.74878,
+          9.5723483
+        ],
+        [
+          46.7480918,
+          9.57142895
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 115,
+      "estimatedMinutes": 0.5,
+      "id": "connector_9",
+      "fromNode": "node_46",
+      "toNode": "node_183",
+      "geometry": [
+        [
+          46.78162952857143,
+          9.659733485714284
+        ],
+        [
+          46.7805977,
+          9.6596212
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 115,
+      "estimatedMinutes": 0.5,
+      "id": "connector_10",
+      "fromNode": "node_183",
+      "toNode": "node_46",
+      "geometry": [
+        [
+          46.7805977,
+          9.6596212
+        ],
+        [
+          46.78162952857143,
+          9.659733485714284
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 89,
+      "estimatedMinutes": 0.5,
+      "id": "connector_11",
+      "fromNode": "node_47",
+      "toNode": "node_387",
+      "geometry": [
+        [
+          46.788478999999995,
+          9.670145416666665
+        ],
+        [
+          46.7877067,
+          9.6698506
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 93,
+      "estimatedMinutes": 0.5,
+      "id": "connector_12",
+      "fromNode": "node_64",
+      "toNode": "node_248",
+      "geometry": [
+        [
+          46.7900219,
+          9.674126
+        ],
+        [
+          46.7895707,
+          9.6731014
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 93,
+      "estimatedMinutes": 0.5,
+      "id": "connector_13",
+      "fromNode": "node_248",
+      "toNode": "node_64",
+      "geometry": [
+        [
+          46.7895707,
+          9.6731014
+        ],
+        [
+          46.7900219,
+          9.674126
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 110,
+      "estimatedMinutes": 0.5,
+      "id": "connector_14",
+      "fromNode": "node_69",
+      "toNode": "node_153",
+      "geometry": [
+        [
+          46.7616394,
+          9.5889287
+        ],
+        [
+          46.7607005,
+          9.5893991
+        ]
+      ]
+    },
+    {
+      "name": "Short connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 112,
+      "estimatedMinutes": 0.5,
+      "id": "connector_15",
+      "fromNode": "node_75",
+      "toNode": "node_74",
+      "geometry": [
+        [
+          46.73344426666667,
+          9.543810166666669
+        ],
+        [
+          46.7339687,
+          9.5450588
+        ]
+      ]
     }
   ],
   "warnings": [
@@ -71479,14 +71794,15 @@
     "Run Bananen Wald: unknown difficulty \"freeride\"",
     "Run Bananen Wald: direction inferred from geometry order, elevation unavailable",
     "Run Bossi Hang: direction inferred from geometry order, elevation unavailable",
-    "Added 199 run crossing junctions from geometry intersections"
+    "Added 199 run crossing junctions from geometry intersections",
+    "Added 15 short station proximity connector edges"
   ],
   "stats": {
     "nodesBeforeMerge": 1055,
     "nodesAfterMerge": 453,
     "nodesMerged": 602,
-    "edgeCount": 1197,
-    "runCount": 1136,
+    "edgeCount": 1212,
+    "runCount": 1151,
     "liftCount": 61,
     "directionWarningCount": 712,
     "unknownDifficulties": [

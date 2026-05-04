@@ -25,6 +25,7 @@ const DIFFICULTY_FACTORS = {
 const UNKNOWN_DIFFICULTY_WEIGHT = 4;
 const EARTH_RADIUS_M = 6371000;
 const MIN_INTERSECTION_FRACTION = 0.001;
+const DEFAULT_STATION_CONNECTOR_DISTANCE_M = 120;
 
 function toFeatureList(collection) {
   if (!collection) return [];
@@ -411,6 +412,66 @@ function splitRunIntersections(rawEdges, rawNodes, warnings) {
   return expanded;
 }
 
+function isStationNode(node) {
+  return /^Base of /.test(node.label || "");
+}
+
+function hasDirectedEdge(edges, fromNode, toNode) {
+  return edges.some((edge) => edge.fromNode === fromNode && edge.toNode === toNode);
+}
+
+function addStationConnectors(nodes, edges, maxDistanceM, warnings) {
+  const connectors = [];
+  for (let i = 0; i < nodes.length; i += 1) {
+    for (let j = i + 1; j < nodes.length; j += 1) {
+      const a = nodes[i];
+      const b = nodes[j];
+      if (!isStationNode(a) && !isStationNode(b)) continue;
+      const distance = haversineMeters(a, b);
+      if (distance <= 80 || distance > maxDistanceM) continue;
+
+      const base = {
+        name: "Short connector",
+        type: "run",
+        difficulty: "green",
+        directionConfidence: "proximity",
+        length_m: Math.round(distance),
+        estimatedMinutes: estimateMinutes("run", distance, "green"),
+      };
+
+      if (!hasDirectedEdge(edges, a.id, b.id)) {
+        connectors.push({
+          ...base,
+          id: `connector_${connectors.length + 1}`,
+          fromNode: a.id,
+          toNode: b.id,
+          geometry: [
+            [a.lat, a.lon],
+            [b.lat, b.lon],
+          ],
+        });
+      }
+      if (!hasDirectedEdge(edges, b.id, a.id)) {
+        connectors.push({
+          ...base,
+          id: `connector_${connectors.length + 1}`,
+          fromNode: b.id,
+          toNode: a.id,
+          geometry: [
+            [b.lat, b.lon],
+            [a.lat, a.lon],
+          ],
+        });
+      }
+    }
+  }
+
+  if (connectors.length) {
+    warnings.push(`Added ${connectors.length} short station proximity connector edges`);
+  }
+  return [...edges, ...connectors];
+}
+
 function buildGraph(rawData, options = {}) {
   const warnings = [];
   const rawNodes = new Map();
@@ -489,11 +550,17 @@ function buildGraph(rawData, options = {}) {
   const rawNodeList = Array.from(rawNodes.values());
   const beforeMerge = rawNodeList.length;
   const { nodes, idMap } = mergeGroups(rawNodeList, options.snapDistanceM || 80);
-  const edges = routableRawEdges.map(({ fromRaw, toRaw, directedCoords, ...edge }) => ({
+  const splitEdges = routableRawEdges.map(({ fromRaw, toRaw, directedCoords, ...edge }) => ({
     ...edge,
     fromNode: idMap.get(fromRaw),
     toNode: idMap.get(toRaw),
   }));
+  const edges = addStationConnectors(
+    nodes,
+    splitEdges,
+    options.stationConnectorDistanceM || DEFAULT_STATION_CONNECTOR_DISTANCE_M,
+    warnings
+  );
 
   const resortName = rawData.name || rawData.resort_name || rawData.ski_area_name || "Unnamed resort";
   const slug = rawData.slug || "";
