@@ -83,6 +83,12 @@ function logGraph(slug, graph) {
   );
 }
 
+function isObviouslyIncompleteGraph(graph) {
+  const liftCount = graph.stats?.liftCount ?? graph.edges.filter((edge) => edge.type === "lift").length;
+  const runCount = graph.stats?.runCount ?? graph.edges.filter((edge) => edge.type === "run").length;
+  return liftCount > 0 && runCount === 0;
+}
+
 app.get("/api/search", async (req, res, next) => {
   try {
     const query = String(req.query.q || "").trim();
@@ -116,6 +122,11 @@ app.post("/api/load", async (req, res, next) => {
     const graph = buildGraph(raw);
     graph.slug = slug;
     graph.resortName = name;
+    if (isObviouslyIncompleteGraph(graph)) {
+      return res.status(502).json({
+        error: `OpenSkiMap returned lifts but no runs for ${name}. Try a different ski area result or retry later.`,
+      });
+    }
     await writeJson(path.join(DATA_DIR, `${slug}.graph.json`), graph);
     logGraph(slug, graph);
 

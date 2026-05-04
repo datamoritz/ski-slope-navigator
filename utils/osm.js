@@ -222,6 +222,27 @@ async function fetchSearchFallback(name, skiAreaId) {
   };
 }
 
+function featureCount(collection) {
+  return Array.isArray(collection?.features) ? collection.features.length : 0;
+}
+
+function hasIncompleteRuns(runs, lifts) {
+  return featureCount(runs) === 0 && featureCount(lifts) > 0;
+}
+
+async function fetchFallbackData(name, skiAreaId, skiAreaDetail, reason) {
+  console.warn(`${reason}, using Overpass viewport fallback`);
+  if (skiAreaDetail) {
+    try {
+      return await fetchOverpassResortData(skiAreaId, skiAreaDetail);
+    } catch (overpassError) {
+      console.warn(`Overpass fallback failed, using search fallback: ${overpassError.message}`);
+      return fetchSearchFallback(name, skiAreaId);
+    }
+  }
+  return fetchSearchFallback(name, skiAreaId);
+}
+
 async function fetchResortData(skiAreaId, name) {
   const skiAreaDetail = await fetchSkiAreaDetail(skiAreaId).catch(() => null);
   let runs;
@@ -232,17 +253,16 @@ async function fetchResortData(skiAreaId, name) {
       fetchGeoJsonLayer("lifts", skiAreaId),
     ]);
   } catch (error) {
-    console.warn(`OpenSkiMap layer download failed, using Overpass viewport fallback: ${error.message}`);
-    if (skiAreaDetail) {
-      try {
-        ({ runs, lifts } = await fetchOverpassResortData(skiAreaId, skiAreaDetail));
-      } catch (overpassError) {
-        console.warn(`Overpass fallback failed, using search fallback: ${overpassError.message}`);
-        ({ runs, lifts } = await fetchSearchFallback(name, skiAreaId));
-      }
-    } else {
-      ({ runs, lifts } = await fetchSearchFallback(name, skiAreaId));
-    }
+    ({ runs, lifts } = await fetchFallbackData(name, skiAreaId, skiAreaDetail, `OpenSkiMap layer download failed: ${error.message}`));
+  }
+
+  if (hasIncompleteRuns(runs, lifts)) {
+    ({ runs, lifts } = await fetchFallbackData(
+      name,
+      skiAreaId,
+      skiAreaDetail,
+      `OpenSkiMap returned ${featureCount(runs)} runs and ${featureCount(lifts)} lifts`
+    ));
   }
 
   return {
