@@ -26,6 +26,7 @@ const UNKNOWN_DIFFICULTY_WEIGHT = 4;
 const EARTH_RADIUS_M = 6371000;
 const MIN_INTERSECTION_FRACTION = 0.001;
 const DEFAULT_STATION_CONNECTOR_DISTANCE_M = 120;
+const DEFAULT_DEAD_END_CONNECTOR_DISTANCE_M = 520;
 
 function toFeatureList(collection) {
   if (!collection) return [];
@@ -472,6 +473,58 @@ function addStationConnectors(nodes, edges, maxDistanceM, warnings) {
   return [...edges, ...connectors];
 }
 
+function addDeadEndRunConnectors(nodes, edges, maxDistanceM, warnings) {
+  const outgoing = new Map();
+  const incoming = new Map();
+  for (const edge of edges) {
+    if (!outgoing.has(edge.fromNode)) outgoing.set(edge.fromNode, []);
+    if (!incoming.has(edge.toNode)) incoming.set(edge.toNode, []);
+    outgoing.get(edge.fromNode).push(edge);
+    incoming.get(edge.toNode).push(edge);
+  }
+
+  const connectors = [];
+  for (const node of nodes) {
+    const incomingRuns = (incoming.get(node.id) || []).filter((edge) => edge.type === "run");
+    if (!incomingRuns.length || (outgoing.get(node.id) || []).length) continue;
+    if (!/^Junction near /.test(node.label || "")) continue;
+
+    const incomingFromNodes = new Set(incomingRuns.map((edge) => edge.fromNode));
+    const candidates = nodes
+      .filter((candidate) => candidate.id !== node.id && !incomingFromNodes.has(candidate.id))
+      .map((candidate) => ({
+        node: candidate,
+        distance: haversineMeters(node, candidate),
+        outgoingRuns: (outgoing.get(candidate.id) || []).filter((edge) => edge.type === "run"),
+      }))
+      .filter((candidate) => candidate.distance <= maxDistanceM && candidate.outgoingRuns.length)
+      .sort((a, b) => a.distance - b.distance);
+
+    const target = candidates[0];
+    if (!target || hasDirectedEdge(edges, node.id, target.node.id)) continue;
+    connectors.push({
+      id: `dead_end_connector_${connectors.length + 1}`,
+      name: "Slope connector",
+      type: "run",
+      difficulty: "green",
+      directionConfidence: "proximity",
+      length_m: Math.round(target.distance),
+      estimatedMinutes: estimateMinutes("run", target.distance, "green"),
+      fromNode: node.id,
+      toNode: target.node.id,
+      geometry: [
+        [node.lat, node.lon],
+        [target.node.lat, target.node.lon],
+      ],
+    });
+  }
+
+  if (connectors.length) {
+    warnings.push(`Added ${connectors.length} dead-end slope connector edges`);
+  }
+  return [...edges, ...connectors];
+}
+
 function buildGraph(rawData, options = {}) {
   const warnings = [];
   const rawNodes = new Map();
@@ -555,10 +608,16 @@ function buildGraph(rawData, options = {}) {
     fromNode: idMap.get(fromRaw),
     toNode: idMap.get(toRaw),
   }));
-  const edges = addStationConnectors(
+  const stationEdges = addStationConnectors(
     nodes,
     splitEdges,
     options.stationConnectorDistanceM || DEFAULT_STATION_CONNECTOR_DISTANCE_M,
+    warnings
+  );
+  const edges = addDeadEndRunConnectors(
+    nodes,
+    stationEdges,
+    options.deadEndConnectorDistanceM || DEFAULT_DEAD_END_CONNECTOR_DISTANCE_M,
     warnings
   );
 

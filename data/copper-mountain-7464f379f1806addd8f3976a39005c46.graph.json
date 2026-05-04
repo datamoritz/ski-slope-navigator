@@ -4,7 +4,7 @@
   "ski_area_id": "7464f379f1806addd8f3976a39005c4628587fac",
   "slug": "copper-mountain-7464f379f1806addd8f3976a39005c46",
   "resortName": "Copper Mountain",
-  "createdAt": "2026-05-04T18:45:10.040Z",
+  "createdAt": "2026-05-04T19:13:56.599Z",
   "nodes": [
     {
       "id": "node_1",
@@ -16393,6 +16393,909 @@
           -106.16319633999998
         ]
       ]
+    },
+    {
+      "id": "dead_end_connector_1",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 340,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_38",
+      "toNode": "node_167",
+      "geometry": [
+        [
+          39.472619550000005,
+          -106.1529528
+        ],
+        [
+          39.4695712,
+          -106.1526981
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_2",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 226,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_46",
+      "toNode": "node_30",
+      "geometry": [
+        [
+          39.496164,
+          -106.1442014
+        ],
+        [
+          39.4975325,
+          -106.14614397999999
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_3",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 185,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_47",
+      "toNode": "node_167",
+      "geometry": [
+        [
+          39.4710621,
+          -106.1536645
+        ],
+        [
+          39.4695712,
+          -106.1526981
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_4",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 134,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_52",
+      "toNode": "node_68",
+      "geometry": [
+        [
+          39.4874556,
+          -106.1551372
+        ],
+        [
+          39.4869057,
+          -106.1565263
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_5",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 223,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_56",
+      "toNode": "node_3",
+      "geometry": [
+        [
+          39.4877018,
+          -106.1750158
+        ],
+        [
+          39.489358333333335,
+          -106.173542
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_6",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 401,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_58",
+      "toNode": "node_34",
+      "geometry": [
+        [
+          39.4804249,
+          -106.1753843
+        ],
+        [
+          39.4769927,
+          -106.1768322
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_7",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 158,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_61",
+      "toNode": "node_3",
+      "geometry": [
+        [
+          39.4879376,
+          -106.1733949
+        ],
+        [
+          39.489358333333335,
+          -106.173542
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_8",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 249,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_63",
+      "toNode": "node_55",
+      "geometry": [
+        [
+          39.4870201,
+          -106.1761236
+        ],
+        [
+          39.488583199999994,
+          -106.17820125
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_9",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 434,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_64",
+      "toNode": "node_55",
+      "geometry": [
+        [
+          39.4850459,
+          -106.1760736
+        ],
+        [
+          39.488583199999994,
+          -106.17820125
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_10",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 182,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_67",
+      "toNode": "node_91",
+      "geometry": [
+        [
+          39.4927821,
+          -106.158744
+        ],
+        [
+          39.49376745,
+          -106.1604392
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_11",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 131,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_69",
+      "toNode": "node_182",
+      "geometry": [
+        [
+          39.4944825,
+          -106.1565945
+        ],
+        [
+          39.494946707817064,
+          -106.15800275078242
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_12",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 199,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_74",
+      "toNode": "node_79",
+      "geometry": [
+        [
+          39.4965897,
+          -106.1757374
+        ],
+        [
+          39.4976577,
+          -106.1738706
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_13",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 172,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_76",
+      "toNode": "node_3",
+      "geometry": [
+        [
+          39.4902816,
+          -106.1719394
+        ],
+        [
+          39.489358333333335,
+          -106.173542
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_14",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 368,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_83",
+      "toNode": "node_18",
+      "geometry": [
+        [
+          39.4983862,
+          -106.168678
+        ],
+        [
+          39.49925390377465,
+          -106.16453979100982
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_15",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 127,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_85",
+      "toNode": "node_81",
+      "geometry": [
+        [
+          39.4963206,
+          -106.1633037
+        ],
+        [
+          39.49743340251881,
+          -106.16296447894095
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_16",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 153,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_93",
+      "toNode": "node_94",
+      "geometry": [
+        [
+          39.4863708,
+          -106.1486141
+        ],
+        [
+          39.4857134,
+          -106.1501857
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_17",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 308,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_95",
+      "toNode": "node_68",
+      "geometry": [
+        [
+          39.4883381,
+          -106.1534579
+        ],
+        [
+          39.4869057,
+          -106.1565263
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_18",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 135,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_98",
+      "toNode": "node_7",
+      "geometry": [
+        [
+          39.4827212,
+          -106.15483565
+        ],
+        [
+          39.4839349,
+          -106.15496343333332
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_19",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 181,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_99",
+      "toNode": "node_112",
+      "geometry": [
+        [
+          39.4816592,
+          -106.155856
+        ],
+        [
+          39.4801644,
+          -106.156688
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_20",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 254,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_100",
+      "toNode": "node_34",
+      "geometry": [
+        [
+          39.4784414,
+          -106.1791277
+        ],
+        [
+          39.4769927,
+          -106.1768322
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_21",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 321,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_101",
+      "toNode": "node_34",
+      "geometry": [
+        [
+          39.4742251,
+          -106.1778959
+        ],
+        [
+          39.4769927,
+          -106.1768322
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_22",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 194,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_103",
+      "toNode": "node_151",
+      "geometry": [
+        [
+          39.472389,
+          -106.1684715
+        ],
+        [
+          39.47355709086662,
+          -106.16679673587151
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_23",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 266,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_105",
+      "toNode": "node_151",
+      "geometry": [
+        [
+          39.4711618,
+          -106.1667192
+        ],
+        [
+          39.47355709086662,
+          -106.16679673587151
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_24",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 241,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_109",
+      "toNode": "node_175",
+      "geometry": [
+        [
+          39.4836038,
+          -106.1618446
+        ],
+        [
+          39.48556903245188,
+          -106.16302854763558
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_25",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 168,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_111",
+      "toNode": "node_104",
+      "geometry": [
+        [
+          39.4790298,
+          -106.1620821
+        ],
+        [
+          39.47781882922845,
+          -106.16326082574612
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_26",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 274,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_114",
+      "toNode": "node_118",
+      "geometry": [
+        [
+          39.4656889,
+          -106.1737542
+        ],
+        [
+          39.4664297,
+          -106.1768029
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_27",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 325,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_116",
+      "toNode": "node_142",
+      "geometry": [
+        [
+          39.4625053,
+          -106.166913
+        ],
+        [
+          39.4605253,
+          -106.1641308
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_28",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 181,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_117",
+      "toNode": "node_142",
+      "geometry": [
+        [
+          39.461713,
+          -106.16557225
+        ],
+        [
+          39.4605253,
+          -106.1641308
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_29",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 288,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_120",
+      "toNode": "node_21",
+      "geometry": [
+        [
+          39.4621021,
+          -106.1749987
+        ],
+        [
+          39.46288043278799,
+          -106.17179892035024
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_30",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 317,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_124",
+      "toNode": "node_176",
+      "geometry": [
+        [
+          39.46169,
+          -106.1679784
+        ],
+        [
+          39.463909441866754,
+          -106.17030510508044
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_31",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 207,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_127",
+      "toNode": "node_29",
+      "geometry": [
+        [
+          39.4980474,
+          -106.1486786
+        ],
+        [
+          39.49804084,
+          -106.1510935
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_32",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 199,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_129",
+      "toNode": "node_29",
+      "geometry": [
+        [
+          39.4972649,
+          -106.1490008
+        ],
+        [
+          39.49804084,
+          -106.1510935
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_33",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 87,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_137",
+      "toNode": "node_75",
+      "geometry": [
+        [
+          39.4853987,
+          -106.1663019
+        ],
+        [
+          39.4851422,
+          -106.165341
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_34",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 327,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_139",
+      "toNode": "node_82",
+      "geometry": [
+        [
+          39.4966228,
+          -106.1701595
+        ],
+        [
+          39.4950617,
+          -106.1733844
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_35",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 170,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_140",
+      "toNode": "node_142",
+      "geometry": [
+        [
+          39.4590098,
+          -106.163872
+        ],
+        [
+          39.4605253,
+          -106.1641308
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_36",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 289,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_143",
+      "toNode": "node_21",
+      "geometry": [
+        [
+          39.4615136,
+          -106.1689384
+        ],
+        [
+          39.46288043278799,
+          -106.17179892035024
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_37",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 92,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_145",
+      "toNode": "node_142",
+      "geometry": [
+        [
+          39.4609376,
+          -106.1650652
+        ],
+        [
+          39.4605253,
+          -106.1641308
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_38",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 308,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_148",
+      "toNode": "node_112",
+      "geometry": [
+        [
+          39.4777222,
+          -106.1549912
+        ],
+        [
+          39.4801644,
+          -106.156688
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_39",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 170,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_150",
+      "toNode": "node_6",
+      "geometry": [
+        [
+          39.473469050000006,
+          -106.1702316
+        ],
+        [
+          39.475000375,
+          -106.170144725
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_40",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 417,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_155",
+      "toNode": "node_62",
+      "geometry": [
+        [
+          39.4844036,
+          -106.1786985
+        ],
+        [
+          39.4881131,
+          -106.1794281
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_41",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 348,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_156",
+      "toNode": "node_21",
+      "geometry": [
+        [
+          39.4597838,
+          -106.1712375
+        ],
+        [
+          39.46288043278799,
+          -106.17179892035024
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_42",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 247,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_158",
+      "toNode": "node_21",
+      "geometry": [
+        [
+          39.4615951,
+          -106.1741449
+        ],
+        [
+          39.46288043278799,
+          -106.17179892035024
+        ]
+      ]
+    },
+    {
+      "id": "dead_end_connector_43",
+      "name": "Slope connector",
+      "type": "run",
+      "difficulty": "green",
+      "directionConfidence": "proximity",
+      "length_m": 161,
+      "estimatedMinutes": 0.5,
+      "fromNode": "node_166",
+      "toNode": "node_5",
+      "geometry": [
+        [
+          39.4978931,
+          -106.1573702
+        ],
+        [
+          39.49930619985982,
+          -106.15776331919677
+        ]
+      ]
     }
   ],
   "warnings": [
@@ -16555,14 +17458,15 @@
     "Run Spaulding Glades: direction inferred from geometry order, elevation unavailable",
     "Run Colorado Boulevard: direction inferred from geometry order, elevation unavailable",
     "Added 54 run crossing junctions from geometry intersections",
-    "Added 10 short station proximity connector edges"
+    "Added 10 short station proximity connector edges",
+    "Added 43 dead-end slope connector edges"
   ],
   "stats": {
     "nodesBeforeMerge": 357,
     "nodesAfterMerge": 185,
     "nodesMerged": 172,
-    "edgeCount": 296,
-    "runCount": 273,
+    "edgeCount": 339,
+    "runCount": 316,
     "liftCount": 23,
     "directionWarningCount": 156,
     "unknownDifficulties": [
