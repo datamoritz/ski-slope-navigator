@@ -375,6 +375,11 @@ button:hover {
   background: #e7f1ef;
 }
 
+.map-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .leaflet-container {
   position: relative;
   overflow: hidden;

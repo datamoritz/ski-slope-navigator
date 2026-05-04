@@ -29,6 +29,7 @@ const els = {
   fromSelect: document.querySelector("#fromSelect"),
   toSelect: document.querySelector("#toSelect"),
   nodeOptions: document.querySelector("#nodeOptions"),
+  mapRouteButton: document.querySelector("#mapRouteButton"),
   routeButton: document.querySelector("#routeButton"),
   routeStatus: document.querySelector("#routeStatus"),
   routeTitle: document.querySelector("#routeTitle"),
@@ -62,14 +63,6 @@ async function api(path, options = {}) {
   const data = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(data.error || `Request failed: ${response.status}`);
   return data;
-}
-
-function sourceLabel(source) {
-  return source === "manual_upload" ? "Manual upload" : "OpenSkiMap";
-}
-
-function renderBadge(source) {
-  return `<span class="badge ${source || "openskimap"}">${sourceLabel(source)}</span>`;
 }
 
 function setStatus(element, message) {
@@ -644,7 +637,6 @@ async function loadCachedResorts() {
                   <p>${resort.lifts} lifts · ${resort.runs} runs · ${resort.locations} locations</p>
                 </div>
                 <div>
-                  ${renderBadge(resort.source)}
                   <button data-open="${escapeAttr(resort.slug)}">Open</button>
                 </div>
               </article>
@@ -769,6 +761,7 @@ els.cachedResorts.addEventListener("click", (event) => {
 
 els.refreshCached.addEventListener("click", loadCachedResorts);
 els.routeButton.addEventListener("click", findRoute);
+els.mapRouteButton.addEventListener("click", findRoute);
 els.anotherRoute.addEventListener("click", () => showView("viewLoaded"));
 els.homeButton.addEventListener("click", () => showView("viewSelector"));
 els.fromSelect.addEventListener("change", () => {
