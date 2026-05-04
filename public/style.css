@@ -291,12 +291,6 @@ button:hover,
   background: var(--amber);
 }
 
-.upload-placeholder {
-  width: 100%;
-  color: var(--muted);
-  background: #eef3f1;
-}
-
 .map-panel {
   display: grid;
   gap: 10px;
