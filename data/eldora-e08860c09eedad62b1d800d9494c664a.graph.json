@@ -4,7 +4,7 @@
   "ski_area_id": "e08860c09eedad62b1d800d9494c664aac1c76e2",
   "slug": "eldora-e08860c09eedad62b1d800d9494c664a",
   "resortName": "Eldora",
-  "createdAt": "2026-05-03T17:25:42.795Z",
+  "createdAt": "2026-05-04T18:45:10.221Z",
   "nodes": [
     {
       "id": "node_1",
@@ -21,8 +21,8 @@
     {
       "id": "node_3",
       "label": "Top of EZ",
-      "lat": 39.93337561818182,
-      "lon": -105.58568347272727
+      "lat": 39.934076501454186,
+      "lon": -105.58602198506992
     },
     {
       "id": "node_4",
@@ -32,519 +32,525 @@
     },
     {
       "id": "node_5",
-      "label": "Top of Race",
-      "lat": 39.93530473333333,
-      "lon": -105.58663503333332
-    },
-    {
-      "id": "node_6",
       "label": "Base of Indian Peaks",
       "lat": 39.94651365,
       "lon": -105.59210995000001
     },
     {
-      "id": "node_7",
+      "id": "node_6",
       "label": "Top of Indian Peaks",
       "lat": 39.937628950000004,
       "lon": -105.60052425
     },
     {
-      "id": "node_8",
+      "id": "node_7",
       "label": "Base of Corona",
       "lat": 39.94887396,
       "lon": -105.59924029999999
     },
     {
-      "id": "node_9",
+      "id": "node_8",
       "label": "Top of Corona",
       "lat": 39.94067285,
       "lon": -105.60706346250001
     },
     {
-      "id": "node_10",
+      "id": "node_9",
       "label": "Top of Sundance",
       "lat": 39.93392993333334,
       "lon": -105.58717956666665
     },
     {
-      "id": "node_11",
+      "id": "node_10",
       "label": "Top of Alpenglow",
       "lat": 39.936613,
       "lon": -105.59783717272727
     },
     {
-      "id": "node_12",
+      "id": "node_11",
       "label": "Junction near Easyway",
       "lat": 39.933267400000005,
       "lon": -105.58308224999999
     },
     {
-      "id": "node_13",
+      "id": "node_12",
       "label": "Top of Summer Road",
       "lat": 39.9363123,
       "lon": -105.5883396
     },
     {
-      "id": "node_14",
+      "id": "node_13",
       "label": "Junction near Powderhorn",
       "lat": 39.9359956,
       "lon": -105.5901876
     },
     {
-      "id": "node_15",
+      "id": "node_14",
       "label": "Junction near Challenge",
       "lat": 39.9368037,
       "lon": -105.587645
     },
     {
-      "id": "node_16",
+      "id": "node_15",
       "label": "Top of Gabor's",
       "lat": 39.9347413,
       "lon": -105.5851129
     },
     {
-      "id": "node_17",
+      "id": "node_16",
       "label": "Top of Klondike",
       "lat": 39.9396521,
       "lon": -105.5931815
     },
     {
-      "id": "node_18",
+      "id": "node_17",
       "label": "Top of International",
       "lat": 39.9391963,
       "lon": -105.592427
     },
     {
-      "id": "node_19",
+      "id": "node_18",
       "label": "Top of Dream & Scream",
       "lat": 39.93929574,
       "lon": -105.59950298000001
     },
     {
-      "id": "node_20",
+      "id": "node_19",
       "label": "Top of Around the Horn",
       "lat": 39.939863233333334,
       "lon": -105.59581050000001
     },
     {
-      "id": "node_21",
+      "id": "node_20",
       "label": "Top of Hotdog Alley",
       "lat": 39.9383742,
       "lon": -105.5913104
     },
     {
-      "id": "node_22",
+      "id": "node_21",
       "label": "Top of Crewcut",
       "lat": 39.9385914,
       "lon": -105.5897599
     },
     {
-      "id": "node_23",
+      "id": "node_22",
       "label": "Top of Four O'Clock Trail",
       "lat": 39.9416423,
       "lon": -105.59503839999999
     },
     {
-      "id": "node_24",
+      "id": "node_23",
       "label": "Junction near Four O'Clock Trail",
       "lat": 39.9400023,
       "lon": -105.5901981
     },
     {
-      "id": "node_25",
+      "id": "node_24",
       "label": "Junction near Crewcut",
       "lat": 39.9390351,
       "lon": -105.5886035
     },
     {
-      "id": "node_26",
+      "id": "node_25",
       "label": "Top of Psychopath",
       "lat": 39.937427,
       "lon": -105.5948654
     },
     {
-      "id": "node_27",
+      "id": "node_26",
       "label": "Junction near Psychopath",
       "lat": 39.9378981,
       "lon": -105.5902369
     },
     {
-      "id": "node_28",
+      "id": "node_27",
       "label": "Top of Upper Diamond Back",
-      "lat": 39.9394294,
-      "lon": -105.5944233
+      "lat": 39.9397185573513,
+      "lon": -105.5942248070557
+    },
+    {
+      "id": "node_28",
+      "label": "Top of Lower Diamond Back",
+      "lat": 39.941169059569575,
+      "lon": -105.593494732155
     },
     {
       "id": "node_29",
-      "label": "Top of Lower Diamond Back",
-      "lat": 39.9411205,
-      "lon": -105.5934921
-    },
-    {
-      "id": "node_30",
       "label": "Top of Ambush",
       "lat": 39.93978405,
       "lon": -105.59743335
     },
     {
-      "id": "node_31",
+      "id": "node_30",
       "label": "Top of Muleshoe",
       "lat": 39.9386628,
       "lon": -105.6022007
     },
     {
-      "id": "node_32",
+      "id": "node_31",
       "label": "Top of Cascade",
       "lat": 39.9454,
       "lon": -105.6030738
     },
     {
-      "id": "node_33",
+      "id": "node_32",
       "label": "Junction near Cascade",
       "lat": 39.94828895,
       "lon": -105.60207095
     },
     {
-      "id": "node_34",
+      "id": "node_33",
       "label": "Top of Lone Star Loop Snowshoe Trail",
       "lat": 39.9314442,
       "lon": -105.57781424999999
     },
     {
-      "id": "node_35",
+      "id": "node_34",
       "label": "Top of Rob's Shortcut",
       "lat": 39.92994185,
       "lon": -105.55912169999999
     },
     {
-      "id": "node_36",
+      "id": "node_35",
       "label": "Top of Porcupine Park Loop",
       "lat": 39.93129745,
       "lon": -105.58281955
     },
     {
-      "id": "node_37",
+      "id": "node_36",
       "label": "Junction near Porcupine Park Loop",
       "lat": 39.931421,
       "lon": -105.5847518
     },
     {
-      "id": "node_38",
+      "id": "node_37",
       "label": "Top of Twin Twisted Tree",
       "lat": 39.9300815,
       "lon": -105.580338
     },
     {
-      "id": "node_39",
+      "id": "node_38",
       "label": "Top of Meadows Loop",
       "lat": 39.92967962,
       "lon": -105.58275740000002
     },
     {
-      "id": "node_40",
+      "id": "node_39",
       "label": "Top of Gandy Dancer",
       "lat": 39.93301945,
       "lon": -105.57811985000001
     },
     {
-      "id": "node_41",
+      "id": "node_40",
       "label": "Top of For Pete's Sake",
       "lat": 39.93723419090909,
       "lon": -105.57481918181817
     },
     {
-      "id": "node_42",
+      "id": "node_41",
       "label": "Top of Woodcutter",
       "lat": 39.9330046,
       "lon": -105.5749715
     },
     {
-      "id": "node_43",
+      "id": "node_42",
       "label": "Top of Sawmill",
       "lat": 39.931911166666666,
       "lon": -105.57277813333333
     },
     {
-      "id": "node_44",
+      "id": "node_43",
       "label": "Top of Buckeye Basin Loop",
       "lat": 39.9357986,
       "lon": -105.567641
     },
     {
-      "id": "node_45",
+      "id": "node_44",
       "label": "Top of Sawmill",
       "lat": 39.9303982,
       "lon": -105.5791491
     },
     {
-      "id": "node_46",
+      "id": "node_45",
       "label": "Junction near Sawmill",
       "lat": 39.93312905,
       "lon": -105.5712268
     },
     {
-      "id": "node_47",
+      "id": "node_46",
       "label": "Top of Rising Sun",
       "lat": 39.9301977,
       "lon": -105.5769791
     },
     {
-      "id": "node_48",
+      "id": "node_47",
       "label": "Top of Setting Sun",
       "lat": 39.9294873,
       "lon": -105.5756407
     },
     {
-      "id": "node_49",
+      "id": "node_48",
       "label": "Junction near Setting Sun",
       "lat": 39.9262846,
       "lon": -105.5615625
     },
     {
-      "id": "node_50",
+      "id": "node_49",
       "label": "Junction near Rob's Shortcut",
       "lat": 39.9317117,
       "lon": -105.5542226
     },
     {
-      "id": "node_51",
+      "id": "node_50",
       "label": "Top of Brian's Glades",
       "lat": 39.9415464,
       "lon": -105.6067777
     },
     {
-      "id": "node_52",
+      "id": "node_51",
       "label": "Top of Moose Glades",
       "lat": 39.945543,
       "lon": -105.6092274
     },
     {
-      "id": "node_53",
+      "id": "node_52",
       "label": "Top of Mill Iron",
       "lat": 39.93635866666667,
       "lon": -105.56693213333334
     },
     {
-      "id": "node_54",
+      "id": "node_53",
       "label": "Top of Dixie",
-      "lat": 39.9379193,
-      "lon": -105.5691009
+      "lat": 39.93769552680601,
+      "lon": -105.56847002974932
     },
     {
-      "id": "node_55",
-      "label": "Top of Peterson's Return",
-      "lat": 39.937645233333335,
-      "lon": -105.5682173
-    },
-    {
-      "id": "node_56",
+      "id": "node_54",
       "label": "Junction near Peterson's Return",
       "lat": 39.9364726,
       "lon": -105.5766124
     },
     {
-      "id": "node_57",
+      "id": "node_55",
       "label": "Top of Bogwaun",
       "lat": 39.9343435,
       "lon": -105.5653779
     },
     {
-      "id": "node_58",
+      "id": "node_56",
       "label": "Junction near Deadman's Gulch",
       "lat": 39.9282971,
       "lon": -105.5877313
     },
     {
-      "id": "node_59",
+      "id": "node_57",
       "label": "Top of Zarlengo Loop",
       "lat": 39.926990849999996,
       "lon": -105.5876548
     },
     {
-      "id": "node_60",
+      "id": "node_58",
       "label": "Junction near Zarlengo Loop",
       "lat": 39.9177586,
       "lon": -105.593463
     },
     {
-      "id": "node_61",
+      "id": "node_59",
       "label": "Junction near Rising Sun",
       "lat": 39.9360917,
       "lon": -105.5635922
     },
     {
-      "id": "node_62",
-      "label": "Junction 62",
+      "id": "node_60",
+      "label": "Junction 60",
       "lat": 39.9278596,
       "lon": -105.5646564
     },
     {
-      "id": "node_63",
+      "id": "node_61",
       "label": "Junction near Unnamed run",
       "lat": 39.9318336,
       "lon": -105.5663527
     },
     {
-      "id": "node_64",
+      "id": "node_62",
       "label": "Junction near Alpenhorn",
       "lat": 39.9462754,
       "lon": -105.5999977
     },
     {
-      "id": "node_65",
+      "id": "node_63",
       "label": "Junction near Wolf Tongue",
       "lat": 39.9444989,
       "lon": -105.6024263
     },
     {
-      "id": "node_66",
+      "id": "node_64",
       "label": "Junction near Red Tail",
       "lat": 39.9418707,
       "lon": -105.6001997
     },
     {
-      "id": "node_67",
+      "id": "node_65",
       "label": "Top of Zarlengo Loop",
       "lat": 39.9232168,
       "lon": -105.5889544
     },
     {
-      "id": "node_68",
+      "id": "node_66",
       "label": "Top of Jenny Creek Loop",
       "lat": 39.9279675,
       "lon": -105.59173215
     },
     {
-      "id": "node_69",
+      "id": "node_67",
       "label": "Top of Deadman's Gulch",
       "lat": 39.9302374,
       "lon": -105.5842353
     },
     {
-      "id": "node_70",
+      "id": "node_68",
       "label": "Top of 17th Avenue",
       "lat": 39.9341235,
       "lon": -105.5782297
     },
     {
-      "id": "node_71",
+      "id": "node_69",
       "label": "Top of Meadows Loop",
       "lat": 39.9269634,
       "lon": -105.58311495000001
     },
     {
-      "id": "node_72",
+      "id": "node_70",
       "label": "Junction near Almost Perfect",
       "lat": 39.93695445,
       "lon": -105.5866638
     },
     {
-      "id": "node_73",
+      "id": "node_71",
       "label": "Junction near Cannonball Run",
       "lat": 39.9378676,
       "lon": -105.5874099
     },
     {
-      "id": "node_74",
+      "id": "node_72",
       "label": "Junction near Unnamed run",
       "lat": 39.93645245,
       "lon": -105.59404525
     },
     {
-      "id": "node_75",
+      "id": "node_73",
       "label": "Junction near City Lights",
       "lat": 39.9378843,
       "lon": -105.597187
     },
     {
-      "id": "node_76",
-      "label": "Junction 76",
+      "id": "node_74",
+      "label": "Junction 74",
       "lat": 39.9382085,
       "lon": -105.6040359
     },
     {
-      "id": "node_77",
+      "id": "node_75",
       "label": "Junction near Unnamed run",
       "lat": 39.948314,
       "lon": -105.6004916
     },
     {
-      "id": "node_78",
+      "id": "node_76",
       "label": "Top of Corrona",
       "lat": 39.946872,
       "lon": -105.6011815
     },
     {
-      "id": "node_79",
+      "id": "node_77",
       "label": "Top of Corona Road",
       "lat": 39.9443081,
       "lon": -105.5918875
     },
     {
-      "id": "node_80",
+      "id": "node_78",
       "label": "Junction near Corona Road",
       "lat": 39.9469574,
       "lon": -105.5963212
     },
     {
-      "id": "node_81",
+      "id": "node_79",
       "label": "Top of Escape",
       "lat": 39.9409486,
       "lon": -105.5969384
     },
     {
-      "id": "node_82",
-      "label": "Junction 82",
+      "id": "node_80",
+      "label": "Junction 80",
       "lat": 39.9375999,
       "lon": -105.5885527
     },
     {
-      "id": "node_83",
+      "id": "node_81",
       "label": "Top of Reel It In",
       "lat": 39.9453724,
       "lon": -105.5953516
     },
     {
-      "id": "node_84",
+      "id": "node_82",
       "label": "Junction near Dixie",
       "lat": 39.9375501,
       "lon": -105.5734004
     },
     {
-      "id": "node_85",
+      "id": "node_83",
       "label": "Junction near Low down Snowshoe Trail",
       "lat": 39.9365251,
       "lon": -105.5643595
     },
     {
-      "id": "node_86",
+      "id": "node_84",
       "label": "Top of Twisted Snowshoe Trail",
       "lat": 39.9351992,
       "lon": -105.5734271
     },
     {
-      "id": "node_87",
+      "id": "node_85",
       "label": "Top of Phoebe Snow Loop",
       "lat": 39.9292013,
       "lon": -105.5810879
     },
     {
-      "id": "node_88",
+      "id": "node_86",
       "label": "Top of Cheater's Corner",
       "lat": 39.9324677,
       "lon": -105.5825247
     },
     {
-      "id": "node_89",
+      "id": "node_87",
       "label": "Top of Placer Glades",
       "lat": 39.9408687,
       "lon": -105.5986755
     },
     {
-      "id": "node_90",
+      "id": "node_88",
       "label": "Junction near Sidewinder",
       "lat": 39.9420661,
       "lon": -105.5935837
+    },
+    {
+      "id": "node_89",
+      "label": "Junction near Hornblower / City Lights",
+      "lat": 39.93782341308629,
+      "lon": -105.59870264700834
+    },
+    {
+      "id": "node_90",
+      "label": "Junction near Liftline / Corona Road",
+      "lat": 39.94552603878365,
+      "lon": -105.59344404479259
+    },
+    {
+      "id": "node_91",
+      "label": "Junction near Corona Road / Reel It In",
+      "lat": 39.946326011317524,
+      "lon": -105.59458662114439
     }
   ],
   "edges": [
@@ -750,7 +756,7 @@
         ]
       ],
       "fromNode": "node_4",
-      "toNode": "node_5"
+      "toNode": "node_3"
     },
     {
       "id": "lift_6",
@@ -845,8 +851,8 @@
           -105.6005504
         ]
       ],
-      "fromNode": "node_6",
-      "toNode": "node_7"
+      "fromNode": "node_5",
+      "toNode": "node_6"
     },
     {
       "id": "lift_7",
@@ -925,8 +931,8 @@
           -105.6077021
         ]
       ],
-      "fromNode": "node_8",
-      "toNode": "node_9"
+      "fromNode": "node_7",
+      "toNode": "node_8"
     },
     {
       "id": "lift_8",
@@ -986,7 +992,7 @@
         ]
       ],
       "fromNode": "node_1",
-      "toNode": "node_10"
+      "toNode": "node_9"
     },
     {
       "id": "lift_9",
@@ -1070,7 +1076,7 @@
         ]
       ],
       "fromNode": "node_4",
-      "toNode": "node_11"
+      "toNode": "node_10"
     },
     {
       "id": "lift_10",
@@ -1230,7 +1236,7 @@
         ]
       ],
       "fromNode": "node_3",
-      "toNode": "node_12"
+      "toNode": "node_11"
     },
     {
       "id": "run_13",
@@ -1299,14 +1305,14 @@
       "toNode": "node_1"
     },
     {
-      "id": "run_14",
+      "id": "run_14_part_1",
       "name": "Sundance",
       "type": "run",
       "difficulty": "intermediate",
       "directionConfidence": "inferred",
       "directionWarning": "Run Sundance: direction inferred from geometry order, elevation unavailable",
-      "length_m": 439,
-      "estimatedMinutes": 0.5274099550008168,
+      "length_m": 96,
+      "estimatedMinutes": 0.5,
       "geometry": [
         [
           39.933953,
@@ -1315,6 +1321,28 @@
         [
           39.9342269,
           -105.5865827
+        ],
+        [
+          39.93441682617537,
+          -105.58606733125856
+        ]
+      ],
+      "fromNode": "node_9",
+      "toNode": "node_3"
+    },
+    {
+      "id": "run_14_part_2",
+      "name": "Sundance",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Sundance: direction inferred from geometry order, elevation unavailable",
+      "length_m": 343,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.93441682617537,
+          -105.58606733125856
         ],
         [
           39.9344325,
@@ -1361,7 +1389,7 @@
           -105.5827582
         ]
       ],
-      "fromNode": "node_10",
+      "fromNode": "node_3",
       "toNode": "node_1"
     },
     {
@@ -1485,13 +1513,13 @@
       "toNode": "node_1"
     },
     {
-      "id": "run_17",
+      "id": "run_17_part_1",
       "name": "Summer Road",
       "type": "run",
       "difficulty": "easy",
       "directionConfidence": "inferred",
       "directionWarning": "Run Summer Road: direction inferred from geometry order, elevation unavailable",
-      "length_m": 392,
+      "length_m": 307,
       "estimatedMinutes": 0.5,
       "geometry": [
         [
@@ -1559,6 +1587,28 @@
           -105.5861781
         ],
         [
+          39.93441682617537,
+          -105.58606733125856
+        ]
+      ],
+      "fromNode": "node_12",
+      "toNode": "node_3"
+    },
+    {
+      "id": "run_17_part_2",
+      "name": "Summer Road",
+      "type": "run",
+      "difficulty": "easy",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Summer Road: direction inferred from geometry order, elevation unavailable",
+      "length_m": 85,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.93441682617537,
+          -105.58606733125856
+        ],
+        [
           39.9339947,
           -105.5859217
         ],
@@ -1575,7 +1625,7 @@
           -105.5858203
         ]
       ],
-      "fromNode": "node_13",
+      "fromNode": "node_3",
       "toNode": "node_3"
     },
     {
@@ -1621,7 +1671,7 @@
           -105.5852631
         ]
       ],
-      "fromNode": "node_13",
+      "fromNode": "node_12",
       "toNode": "node_4"
     },
     {
@@ -1727,8 +1777,8 @@
           -105.5883396
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_13"
+      "fromNode": "node_10",
+      "toNode": "node_12"
     },
     {
       "id": "run_20",
@@ -1793,8 +1843,8 @@
           -105.5901876
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_14"
+      "fromNode": "node_10",
+      "toNode": "node_13"
     },
     {
       "id": "run_21",
@@ -1867,8 +1917,8 @@
           -105.587645
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_15"
+      "fromNode": "node_10",
+      "toNode": "node_14"
     },
     {
       "id": "run_22",
@@ -1909,7 +1959,7 @@
           -105.5841062
         ]
       ],
-      "fromNode": "node_16",
+      "fromNode": "node_15",
       "toNode": "node_4"
     },
     {
@@ -1963,7 +2013,7 @@
           -105.5839542
         ]
       ],
-      "fromNode": "node_5",
+      "fromNode": "node_3",
       "toNode": "node_4"
     },
     {
@@ -1993,8 +2043,8 @@
           -105.5858349
         ]
       ],
-      "fromNode": "node_5",
-      "toNode": "node_5"
+      "fromNode": "node_3",
+      "toNode": "node_3"
     },
     {
       "id": "run_25",
@@ -2035,7 +2085,7 @@
           -105.5841662
         ]
       ],
-      "fromNode": "node_5",
+      "fromNode": "node_3",
       "toNode": "node_4"
     },
     {
@@ -2085,22 +2135,44 @@
           -105.5845992
         ]
       ],
-      "fromNode": "node_13",
+      "fromNode": "node_12",
       "toNode": "node_4"
     },
     {
-      "id": "run_27",
+      "id": "run_27_part_1",
       "name": "Klondike",
       "type": "run",
       "difficulty": "intermediate",
       "directionConfidence": "inferred",
       "directionWarning": "Run Klondike: direction inferred from geometry order, elevation unavailable",
-      "length_m": 658,
-      "estimatedMinutes": 0.789404536544293,
+      "length_m": 2,
+      "estimatedMinutes": 0.5,
       "geometry": [
         [
           39.9396521,
           -105.5931815
+        ],
+        [
+          39.93965728516398,
+          -105.59316137699625
+        ]
+      ],
+      "fromNode": "node_16",
+      "toNode": "node_16"
+    },
+    {
+      "id": "run_27_part_2",
+      "name": "Klondike",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Klondike: direction inferred from geometry order, elevation unavailable",
+      "length_m": 656,
+      "estimatedMinutes": 0.7872318009514779,
+      "geometry": [
+        [
+          39.93965728516398,
+          -105.59316137699625
         ],
         [
           39.939752,
@@ -2159,7 +2231,7 @@
           -105.5863936
         ]
       ],
-      "fromNode": "node_17",
+      "fromNode": "node_16",
       "toNode": "node_4"
     },
     {
@@ -2241,18 +2313,18 @@
           -105.5852631
         ]
       ],
-      "fromNode": "node_18",
+      "fromNode": "node_17",
       "toNode": "node_4"
     },
     {
-      "id": "run_29",
+      "id": "run_29_part_1",
       "name": "Hornblower",
       "type": "run",
       "difficulty": "intermediate",
       "directionConfidence": "inferred",
       "directionWarning": "Run Hornblower: direction inferred from geometry order, elevation unavailable",
-      "length_m": 828,
-      "estimatedMinutes": 0.9937265227658177,
+      "length_m": 114,
+      "estimatedMinutes": 0.5,
       "geometry": [
         [
           39.9369086,
@@ -2265,6 +2337,28 @@
         [
           39.9377478,
           -105.5986956
+        ],
+        [
+          39.93782341308629,
+          -105.59870264700834
+        ]
+      ],
+      "fromNode": "node_10",
+      "toNode": "node_89"
+    },
+    {
+      "id": "run_29_part_2",
+      "name": "Hornblower",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Hornblower: direction inferred from geometry order, elevation unavailable",
+      "length_m": 549,
+      "estimatedMinutes": 0.6595664549103182,
+      "geometry": [
+        [
+          39.93782341308629,
+          -105.59870264700834
         ],
         [
           39.9380933,
@@ -2351,6 +2445,28 @@
           -105.5942033
         ],
         [
+          39.940007714702595,
+          -105.59402631411137
+        ]
+      ],
+      "fromNode": "node_89",
+      "toNode": "node_27"
+    },
+    {
+      "id": "run_29_part_3",
+      "name": "Hornblower",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Hornblower: direction inferred from geometry order, elevation unavailable",
+      "length_m": 84,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.940007714702595,
+          -105.59402631411137
+        ],
+        [
           39.9399557,
           -105.5938454
         ],
@@ -2363,12 +2479,34 @@
           -105.593235
         ],
         [
+          39.93965728516398,
+          -105.59316137699625
+        ]
+      ],
+      "fromNode": "node_27",
+      "toNode": "node_16"
+    },
+    {
+      "id": "run_29_part_4",
+      "name": "Hornblower",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Hornblower: direction inferred from geometry order, elevation unavailable",
+      "length_m": 81,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.93965728516398,
+          -105.59316137699625
+        ],
+        [
           39.9391963,
           -105.592427
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_18"
+      "fromNode": "node_16",
+      "toNode": "node_17"
     },
     {
       "id": "run_30",
@@ -2445,8 +2583,8 @@
           -105.5956593
         ]
       ],
-      "fromNode": "node_19",
-      "toNode": "node_20"
+      "fromNode": "node_18",
+      "toNode": "node_19"
     },
     {
       "id": "run_31",
@@ -2491,8 +2629,8 @@
           -105.5996539
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_19"
+      "fromNode": "node_10",
+      "toNode": "node_18"
     },
     {
       "id": "run_32",
@@ -2541,7 +2679,7 @@
           -105.5860828
         ]
       ],
-      "fromNode": "node_21",
+      "fromNode": "node_20",
       "toNode": "node_4"
     },
     {
@@ -2647,8 +2785,8 @@
           -105.5895038
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_22"
+      "fromNode": "node_10",
+      "toNode": "node_21"
     },
     {
       "id": "run_34",
@@ -2709,18 +2847,18 @@
           -105.5931815
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_17"
+      "fromNode": "node_10",
+      "toNode": "node_16"
     },
     {
-      "id": "run_35",
+      "id": "run_35_part_1",
       "name": "Four O'Clock Trail",
       "type": "run",
       "difficulty": "intermediate",
       "directionConfidence": "inferred",
       "directionWarning": "Run Four O'Clock Trail: direction inferred from geometry order, elevation unavailable",
-      "length_m": 525,
-      "estimatedMinutes": 0.6303987846646895,
+      "length_m": 165,
+      "estimatedMinutes": 0.5,
       "geometry": [
         [
           39.9419371,
@@ -2749,6 +2887,28 @@
         [
           39.9412685,
           -105.5938676
+        ],
+        [
+          39.94121761913916,
+          -105.59349736430998
+        ]
+      ],
+      "fromNode": "node_22",
+      "toNode": "node_28"
+    },
+    {
+      "id": "run_35_part_2",
+      "name": "Four O'Clock Trail",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Four O'Clock Trail: direction inferred from geometry order, elevation unavailable",
+      "length_m": 360,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.94121761913916,
+          -105.59349736430998
         ],
         [
           39.941211,
@@ -2799,8 +2959,8 @@
           -105.5901981
         ]
       ],
-      "fromNode": "node_23",
-      "toNode": "node_24"
+      "fromNode": "node_28",
+      "toNode": "node_23"
     },
     {
       "id": "run_36",
@@ -2833,8 +2993,8 @@
           -105.5886035
         ]
       ],
-      "fromNode": "node_22",
-      "toNode": "node_25"
+      "fromNode": "node_21",
+      "toNode": "node_24"
     },
     {
       "id": "run_37",
@@ -2887,17 +3047,17 @@
           -105.5902369
         ]
       ],
-      "fromNode": "node_26",
-      "toNode": "node_27"
+      "fromNode": "node_25",
+      "toNode": "node_26"
     },
     {
-      "id": "run_38",
+      "id": "run_38_part_1",
       "name": "Upper Diamond Back",
       "type": "run",
       "difficulty": "advanced",
       "directionConfidence": "inferred",
       "directionWarning": "Run Upper Diamond Back: direction inferred from geometry order, elevation unavailable",
-      "length_m": 210,
+      "length_m": 74,
       "estimatedMinutes": 0.5,
       "geometry": [
         [
@@ -2907,6 +3067,28 @@
         [
           39.9397777,
           -105.594266
+        ],
+        [
+          39.940007714702595,
+          -105.59402631411137
+        ]
+      ],
+      "fromNode": "node_27",
+      "toNode": "node_27"
+    },
+    {
+      "id": "run_38_part_2",
+      "name": "Upper Diamond Back",
+      "type": "run",
+      "difficulty": "advanced",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Upper Diamond Back: direction inferred from geometry order, elevation unavailable",
+      "length_m": 136,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.940007714702595,
+          -105.59402631411137
         ],
         [
           39.9400084,
@@ -2929,8 +3111,8 @@
           -105.5934921
         ]
       ],
-      "fromNode": "node_28",
-      "toNode": "node_29"
+      "fromNode": "node_27",
+      "toNode": "node_28"
     },
     {
       "id": "run_39",
@@ -3015,8 +3197,8 @@
           -105.5922506
         ]
       ],
-      "fromNode": "node_23",
-      "toNode": "node_6"
+      "fromNode": "node_22",
+      "toNode": "node_5"
     },
     {
       "id": "run_40",
@@ -3161,8 +3343,8 @@
           -105.5991248
         ]
       ],
-      "fromNode": "node_20",
-      "toNode": "node_8"
+      "fromNode": "node_19",
+      "toNode": "node_7"
     },
     {
       "id": "run_41",
@@ -3203,22 +3385,44 @@
           -105.5951085
         ]
       ],
-      "fromNode": "node_30",
-      "toNode": "node_23"
+      "fromNode": "node_29",
+      "toNode": "node_22"
     },
     {
-      "id": "run_42",
+      "id": "run_42_part_1",
       "name": "Lower Diamond Back",
       "type": "run",
       "difficulty": "intermediate",
       "directionConfidence": "inferred",
       "directionWarning": "Run Lower Diamond Back: direction inferred from geometry order, elevation unavailable",
-      "length_m": 635,
-      "estimatedMinutes": 0.7619953290082356,
+      "length_m": 11,
+      "estimatedMinutes": 0.5,
       "geometry": [
         [
           39.9411205,
           -105.5934921
+        ],
+        [
+          39.94121761913916,
+          -105.59349736430998
+        ]
+      ],
+      "fromNode": "node_28",
+      "toNode": "node_28"
+    },
+    {
+      "id": "run_42_part_2",
+      "name": "Lower Diamond Back",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Lower Diamond Back: direction inferred from geometry order, elevation unavailable",
+      "length_m": 624,
+      "estimatedMinutes": 0.7490199660011853,
+      "geometry": [
+        [
+          39.94121761913916,
+          -105.59349736430998
         ],
         [
           39.9413179,
@@ -3281,8 +3485,8 @@
           -105.5919693
         ]
       ],
-      "fromNode": "node_29",
-      "toNode": "node_6"
+      "fromNode": "node_28",
+      "toNode": "node_5"
     },
     {
       "id": "run_43",
@@ -3407,8 +3611,8 @@
           -105.597271
         ]
       ],
-      "fromNode": "node_9",
-      "toNode": "node_30"
+      "fromNode": "node_8",
+      "toNode": "node_29"
     },
     {
       "id": "run_44",
@@ -3505,8 +3709,8 @@
           -105.599511
         ]
       ],
-      "fromNode": "node_31",
-      "toNode": "node_8"
+      "fromNode": "node_30",
+      "toNode": "node_7"
     },
     {
       "id": "run_45",
@@ -3659,8 +3863,8 @@
           -105.5991248
         ]
       ],
-      "fromNode": "node_9",
-      "toNode": "node_8"
+      "fromNode": "node_8",
+      "toNode": "node_7"
     },
     {
       "id": "run_46",
@@ -3797,18 +4001,18 @@
           -105.5990324
         ]
       ],
-      "fromNode": "node_9",
-      "toNode": "node_8"
+      "fromNode": "node_8",
+      "toNode": "node_7"
     },
     {
-      "id": "run_47",
+      "id": "run_47_part_1",
       "name": "Liftline",
       "type": "run",
       "difficulty": "expert",
       "directionConfidence": "inferred",
       "directionWarning": "Run Liftline: direction inferred from geometry order, elevation unavailable",
-      "length_m": 1235,
-      "estimatedMinutes": 2.224120480141301,
+      "length_m": 1072,
+      "estimatedMinutes": 1.9298782296402457,
       "geometry": [
         [
           39.9376009,
@@ -3907,6 +4111,28 @@
           -105.5934555
         ],
         [
+          39.94552603878365,
+          -105.59344404479259
+        ]
+      ],
+      "fromNode": "node_6",
+      "toNode": "node_90"
+    },
+    {
+      "id": "run_47_part_2",
+      "name": "Liftline",
+      "type": "run",
+      "difficulty": "expert",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Liftline: direction inferred from geometry order, elevation unavailable",
+      "length_m": 163,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.94552603878365,
+          -105.59344404479259
+        ],
+        [
           39.9457132,
           -105.5932169
         ],
@@ -3919,8 +4145,8 @@
           -105.5923189
         ]
       ],
-      "fromNode": "node_7",
-      "toNode": "node_6"
+      "fromNode": "node_90",
+      "toNode": "node_5"
     },
     {
       "id": "run_48",
@@ -3993,8 +4219,8 @@
           -105.5978471
         ]
       ],
-      "fromNode": "node_9",
-      "toNode": "node_11"
+      "fromNode": "node_8",
+      "toNode": "node_10"
     },
     {
       "id": "run_49",
@@ -4047,8 +4273,8 @@
           -105.6020656
         ]
       ],
-      "fromNode": "node_32",
-      "toNode": "node_33"
+      "fromNode": "node_31",
+      "toNode": "node_32"
     },
     {
       "id": "run_50",
@@ -5097,8 +5323,8 @@
           -105.5593284
         ]
       ],
-      "fromNode": "node_34",
-      "toNode": "node_35"
+      "fromNode": "node_33",
+      "toNode": "node_34"
     },
     {
       "id": "run_51",
@@ -5607,8 +5833,8 @@
           -105.5847518
         ]
       ],
-      "fromNode": "node_36",
-      "toNode": "node_37"
+      "fromNode": "node_35",
+      "toNode": "node_36"
     },
     {
       "id": "run_52",
@@ -5681,8 +5907,8 @@
           -105.580338
         ]
       ],
-      "fromNode": "node_36",
-      "toNode": "node_38"
+      "fromNode": "node_35",
+      "toNode": "node_37"
     },
     {
       "id": "run_53",
@@ -5919,8 +6145,8 @@
           -105.5828776
         ]
       ],
-      "fromNode": "node_39",
-      "toNode": "node_39"
+      "fromNode": "node_38",
+      "toNode": "node_38"
     },
     {
       "id": "run_54",
@@ -6141,8 +6367,8 @@
           -105.580338
         ]
       ],
-      "fromNode": "node_39",
-      "toNode": "node_38"
+      "fromNode": "node_38",
+      "toNode": "node_37"
     },
     {
       "id": "run_55",
@@ -6495,8 +6721,8 @@
           -105.5781774
         ]
       ],
-      "fromNode": "node_38",
-      "toNode": "node_40"
+      "fromNode": "node_37",
+      "toNode": "node_39"
     },
     {
       "id": "run_56",
@@ -7042,7 +7268,7 @@
         ]
       ],
       "fromNode": "node_1",
-      "toNode": "node_38"
+      "toNode": "node_37"
     },
     {
       "id": "run_57",
@@ -7235,8 +7461,8 @@
           -105.5780623
         ]
       ],
-      "fromNode": "node_41",
-      "toNode": "node_40"
+      "fromNode": "node_40",
+      "toNode": "node_39"
     },
     {
       "id": "run_58",
@@ -7429,8 +7655,8 @@
           -105.5727842
         ]
       ],
-      "fromNode": "node_42",
-      "toNode": "node_43"
+      "fromNode": "node_41",
+      "toNode": "node_42"
     },
     {
       "id": "run_59",
@@ -8127,8 +8353,8 @@
           -105.567641
         ]
       ],
-      "fromNode": "node_44",
-      "toNode": "node_44"
+      "fromNode": "node_43",
+      "toNode": "node_43"
     },
     {
       "id": "run_60",
@@ -8241,8 +8467,8 @@
           -105.57161
         ]
       ],
-      "fromNode": "node_45",
-      "toNode": "node_46"
+      "fromNode": "node_44",
+      "toNode": "node_45"
     },
     {
       "id": "run_61",
@@ -8283,8 +8509,8 @@
           -105.5769791
         ]
       ],
-      "fromNode": "node_34",
-      "toNode": "node_47"
+      "fromNode": "node_33",
+      "toNode": "node_46"
     },
     {
       "id": "run_62",
@@ -8521,8 +8747,8 @@
           -105.5615625
         ]
       ],
-      "fromNode": "node_48",
-      "toNode": "node_49"
+      "fromNode": "node_47",
+      "toNode": "node_48"
     },
     {
       "id": "run_63",
@@ -8671,8 +8897,8 @@
           -105.5542226
         ]
       ],
-      "fromNode": "node_35",
-      "toNode": "node_50"
+      "fromNode": "node_34",
+      "toNode": "node_49"
     },
     {
       "id": "run_64",
@@ -8785,8 +9011,8 @@
           -105.5980134
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_11"
+      "fromNode": "node_10",
+      "toNode": "node_10"
     },
     {
       "id": "run_65",
@@ -8971,8 +9197,8 @@
           -105.6067777
         ]
       ],
-      "fromNode": "node_51",
-      "toNode": "node_51"
+      "fromNode": "node_50",
+      "toNode": "node_50"
     },
     {
       "id": "run_66",
@@ -9145,8 +9371,8 @@
           -105.6077799
         ]
       ],
-      "fromNode": "node_9",
-      "toNode": "node_9"
+      "fromNode": "node_8",
+      "toNode": "node_8"
     },
     {
       "id": "run_67",
@@ -9311,8 +9537,8 @@
           -105.6092274
         ]
       ],
-      "fromNode": "node_52",
-      "toNode": "node_52"
+      "fromNode": "node_51",
+      "toNode": "node_51"
     },
     {
       "id": "run_68",
@@ -9425,8 +9651,8 @@
           -105.59761
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_11"
+      "fromNode": "node_10",
+      "toNode": "node_10"
     },
     {
       "id": "run_69",
@@ -9531,18 +9757,18 @@
           -105.5691009
         ]
       ],
-      "fromNode": "node_53",
-      "toNode": "node_54"
+      "fromNode": "node_52",
+      "toNode": "node_53"
     },
     {
-      "id": "run_70",
+      "id": "run_70_part_1",
       "name": "Peterson's Return",
       "type": "run",
       "difficulty": "intermediate",
       "directionConfidence": "inferred",
       "directionWarning": "Run Peterson's Return: direction inferred from geometry order, elevation unavailable",
-      "length_m": 634,
-      "estimatedMinutes": 0.7612050957895872,
+      "length_m": 29,
+      "estimatedMinutes": 0.5,
       "geometry": [
         [
           39.9373981,
@@ -9555,6 +9781,28 @@
         [
           39.9375718,
           -105.5685591
+        ],
+        [
+          39.937622634030056,
+          -105.5685973487466
+        ]
+      ],
+      "fromNode": "node_53",
+      "toNode": "node_53"
+    },
+    {
+      "id": "run_70_part_2",
+      "name": "Peterson's Return",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Peterson's Return: direction inferred from geometry order, elevation unavailable",
+      "length_m": 605,
+      "estimatedMinutes": 0.7264260726541508,
+      "geometry": [
+        [
+          39.937622634030056,
+          -105.5685973487466
         ],
         [
           39.9377265,
@@ -9753,8 +10001,8 @@
           -105.5749145
         ]
       ],
-      "fromNode": "node_55",
-      "toNode": "node_41"
+      "fromNode": "node_53",
+      "toNode": "node_40"
     },
     {
       "id": "run_71",
@@ -9967,8 +10215,8 @@
           -105.5749211
         ]
       ],
-      "fromNode": "node_54",
-      "toNode": "node_41"
+      "fromNode": "node_53",
+      "toNode": "node_40"
     },
     {
       "id": "run_72",
@@ -10125,8 +10373,8 @@
           -105.5739583
         ]
       ],
-      "fromNode": "node_55",
-      "toNode": "node_41"
+      "fromNode": "node_53",
+      "toNode": "node_40"
     },
     {
       "id": "run_73",
@@ -10243,8 +10491,8 @@
           -105.5708436
         ]
       ],
-      "fromNode": "node_44",
-      "toNode": "node_46"
+      "fromNode": "node_43",
+      "toNode": "node_45"
     },
     {
       "id": "run_74",
@@ -10325,8 +10573,8 @@
           -105.5766124
         ]
       ],
-      "fromNode": "node_41",
-      "toNode": "node_56"
+      "fromNode": "node_40",
+      "toNode": "node_54"
     },
     {
       "id": "run_75",
@@ -10379,8 +10627,8 @@
           -105.575054
         ]
       ],
-      "fromNode": "node_41",
-      "toNode": "node_41"
+      "fromNode": "node_40",
+      "toNode": "node_40"
     },
     {
       "id": "run_76",
@@ -10473,8 +10721,8 @@
           -105.5673534
         ]
       ],
-      "fromNode": "node_57",
-      "toNode": "node_53"
+      "fromNode": "node_55",
+      "toNode": "node_52"
     },
     {
       "id": "run_77",
@@ -10607,8 +10855,8 @@
           -105.5877313
         ]
       ],
-      "fromNode": "node_39",
-      "toNode": "node_58"
+      "fromNode": "node_38",
+      "toNode": "node_56"
     },
     {
       "id": "run_78",
@@ -10805,8 +11053,8 @@
           -105.593463
         ]
       ],
-      "fromNode": "node_59",
-      "toNode": "node_60"
+      "fromNode": "node_57",
+      "toNode": "node_58"
     },
     {
       "id": "run_79",
@@ -10899,8 +11147,8 @@
           -105.5742547
         ]
       ],
-      "fromNode": "node_40",
-      "toNode": "node_41"
+      "fromNode": "node_39",
+      "toNode": "node_40"
     },
     {
       "id": "run_80",
@@ -11533,8 +11781,8 @@
           -105.5635922
         ]
       ],
-      "fromNode": "node_47",
-      "toNode": "node_61"
+      "fromNode": "node_46",
+      "toNode": "node_59"
     },
     {
       "id": "run_81",
@@ -11679,8 +11927,8 @@
           -105.5663527
         ]
       ],
-      "fromNode": "node_62",
-      "toNode": "node_63"
+      "fromNode": "node_60",
+      "toNode": "node_61"
     },
     {
       "id": "run_82",
@@ -11789,8 +12037,8 @@
           -105.5999977
         ]
       ],
-      "fromNode": "node_9",
-      "toNode": "node_64"
+      "fromNode": "node_8",
+      "toNode": "node_62"
     },
     {
       "id": "run_83",
@@ -11871,8 +12119,8 @@
           -105.6024263
         ]
       ],
-      "fromNode": "node_9",
-      "toNode": "node_65"
+      "fromNode": "node_8",
+      "toNode": "node_63"
     },
     {
       "id": "run_84",
@@ -11937,8 +12185,8 @@
           -105.6001997
         ]
       ],
-      "fromNode": "node_31",
-      "toNode": "node_66"
+      "fromNode": "node_30",
+      "toNode": "node_64"
     },
     {
       "id": "run_85",
@@ -12123,8 +12371,8 @@
           -105.6056399
         ]
       ],
-      "fromNode": "node_9",
-      "toNode": "node_9"
+      "fromNode": "node_8",
+      "toNode": "node_8"
     },
     {
       "id": "run_86",
@@ -12425,8 +12673,8 @@
           -105.5752023
         ]
       ],
-      "fromNode": "node_55",
-      "toNode": "node_41"
+      "fromNode": "node_53",
+      "toNode": "node_40"
     },
     {
       "id": "run_87",
@@ -12572,7 +12820,7 @@
         ]
       ],
       "fromNode": "node_3",
-      "toNode": "node_12"
+      "toNode": "node_11"
     },
     {
       "id": "run_90",
@@ -12645,8 +12893,8 @@
           -105.5752035
         ]
       ],
-      "fromNode": "node_41",
-      "toNode": "node_41"
+      "fromNode": "node_40",
+      "toNode": "node_40"
     },
     {
       "id": "run_91",
@@ -12755,8 +13003,8 @@
           -105.593463
         ]
       ],
-      "fromNode": "node_67",
-      "toNode": "node_60"
+      "fromNode": "node_65",
+      "toNode": "node_58"
     },
     {
       "id": "run_92",
@@ -13005,8 +13253,8 @@
           -105.5919811
         ]
       ],
-      "fromNode": "node_68",
-      "toNode": "node_68"
+      "fromNode": "node_66",
+      "toNode": "node_66"
     },
     {
       "id": "run_93",
@@ -13043,8 +13291,8 @@
           -105.5914832
         ]
       ],
-      "fromNode": "node_68",
-      "toNode": "node_68"
+      "fromNode": "node_66",
+      "toNode": "node_66"
     },
     {
       "id": "run_94",
@@ -13077,8 +13325,8 @@
           -105.5833319
         ]
       ],
-      "fromNode": "node_69",
-      "toNode": "node_39"
+      "fromNode": "node_67",
+      "toNode": "node_38"
     },
     {
       "id": "run_95",
@@ -13111,8 +13359,8 @@
           -105.5781774
         ]
       ],
-      "fromNode": "node_40",
-      "toNode": "node_40"
+      "fromNode": "node_39",
+      "toNode": "node_39"
     },
     {
       "id": "run_96",
@@ -13197,8 +13445,8 @@
           -105.5668644
         ]
       ],
-      "fromNode": "node_55",
-      "toNode": "node_53"
+      "fromNode": "node_53",
+      "toNode": "node_52"
     },
     {
       "id": "run_97",
@@ -13247,8 +13495,8 @@
           -105.5668644
         ]
       ],
-      "fromNode": "node_53",
-      "toNode": "node_53"
+      "fromNode": "node_52",
+      "toNode": "node_52"
     },
     {
       "id": "run_98",
@@ -13297,7 +13545,7 @@
           -105.5803012
         ]
       ],
-      "fromNode": "node_70",
+      "fromNode": "node_68",
       "toNode": "node_2"
     },
     {
@@ -13423,8 +13671,8 @@
           -105.5827665
         ]
       ],
-      "fromNode": "node_71",
-      "toNode": "node_71"
+      "fromNode": "node_69",
+      "toNode": "node_69"
     },
     {
       "id": "run_100",
@@ -13501,8 +13749,8 @@
           -105.5889544
         ]
       ],
-      "fromNode": "node_59",
-      "toNode": "node_67"
+      "fromNode": "node_57",
+      "toNode": "node_65"
     },
     {
       "id": "run_101",
@@ -13531,8 +13779,8 @@
           -105.5727875
         ]
       ],
-      "fromNode": "node_43",
-      "toNode": "node_43"
+      "fromNode": "node_42",
+      "toNode": "node_42"
     },
     {
       "id": "run_102",
@@ -13565,8 +13813,8 @@
           -105.5865047
         ]
       ],
-      "fromNode": "node_5",
-      "toNode": "node_72"
+      "fromNode": "node_3",
+      "toNode": "node_70"
     },
     {
       "id": "run_103",
@@ -13639,8 +13887,8 @@
           -105.5874099
         ]
       ],
-      "fromNode": "node_11",
-      "toNode": "node_73"
+      "fromNode": "node_10",
+      "toNode": "node_71"
     },
     {
       "id": "run_104",
@@ -13661,8 +13909,8 @@
           -105.5937633
         ]
       ],
-      "fromNode": "node_74",
-      "toNode": "node_74"
+      "fromNode": "node_72",
+      "toNode": "node_72"
     },
     {
       "id": "run_105",
@@ -13695,8 +13943,8 @@
           -105.5914599
         ]
       ],
-      "fromNode": "node_18",
-      "toNode": "node_21"
+      "fromNode": "node_17",
+      "toNode": "node_20"
     },
     {
       "id": "run_106",
@@ -13733,17 +13981,17 @@
           -105.5944233
         ]
       ],
-      "fromNode": "node_20",
-      "toNode": "node_28"
+      "fromNode": "node_19",
+      "toNode": "node_27"
     },
     {
-      "id": "run_107",
+      "id": "run_107_part_1",
       "name": "City Lights",
       "type": "run",
       "difficulty": "intermediate",
       "directionConfidence": "inferred",
       "directionWarning": "Run City Lights: direction inferred from geometry order, elevation unavailable",
-      "length_m": 289,
+      "length_m": 158,
       "estimatedMinutes": 0.5,
       "geometry": [
         [
@@ -13775,6 +14023,28 @@
           -105.5990171
         ],
         [
+          39.93782341308629,
+          -105.59870264700834
+        ]
+      ],
+      "fromNode": "node_6",
+      "toNode": "node_89"
+    },
+    {
+      "id": "run_107_part_2",
+      "name": "City Lights",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run City Lights: direction inferred from geometry order, elevation unavailable",
+      "length_m": 131,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.93782341308629,
+          -105.59870264700834
+        ],
+        [
           39.9378427,
           -105.5986308
         ],
@@ -13795,8 +14065,8 @@
           -105.597187
         ]
       ],
-      "fromNode": "node_7",
-      "toNode": "node_75"
+      "fromNode": "node_89",
+      "toNode": "node_73"
     },
     {
       "id": "run_108",
@@ -13841,8 +14111,8 @@
           -105.601822
         ]
       ],
-      "fromNode": "node_76",
-      "toNode": "node_31"
+      "fromNode": "node_74",
+      "toNode": "node_30"
     },
     {
       "id": "run_109",
@@ -13875,8 +14145,8 @@
           -105.5997625
         ]
       ],
-      "fromNode": "node_19",
-      "toNode": "node_19"
+      "fromNode": "node_18",
+      "toNode": "node_18"
     },
     {
       "id": "run_110",
@@ -13909,8 +14179,8 @@
           -105.6004916
         ]
       ],
-      "fromNode": "node_33",
-      "toNode": "node_77"
+      "fromNode": "node_32",
+      "toNode": "node_75"
     },
     {
       "id": "run_111",
@@ -13955,18 +14225,18 @@
           -105.599269
         ]
       ],
-      "fromNode": "node_78",
-      "toNode": "node_8"
+      "fromNode": "node_76",
+      "toNode": "node_7"
     },
     {
-      "id": "run_112",
+      "id": "run_112_part_1",
       "name": "Corona Road",
       "type": "run",
       "difficulty": "intermediate",
       "directionConfidence": "inferred",
       "directionWarning": "Run Corona Road: direction inferred from geometry order, elevation unavailable",
-      "length_m": 488,
-      "estimatedMinutes": 0.586327970130527,
+      "length_m": 192,
+      "estimatedMinutes": 0.5,
       "geometry": [
         [
           39.9443081,
@@ -13993,6 +14263,28 @@
           -105.5931533
         ],
         [
+          39.94552603878365,
+          -105.59344404479259
+        ]
+      ],
+      "fromNode": "node_77",
+      "toNode": "node_90"
+    },
+    {
+      "id": "run_112_part_2",
+      "name": "Corona Road",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Corona Road: direction inferred from geometry order, elevation unavailable",
+      "length_m": 133,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.94552603878365,
+          -105.59344404479259
+        ],
+        [
           39.9457695,
           -105.5937217
         ],
@@ -14003,6 +14295,28 @@
         [
           39.9462982,
           -105.5945231
+        ],
+        [
+          39.946326011317524,
+          -105.59458662114439
+        ]
+      ],
+      "fromNode": "node_90",
+      "toNode": "node_91"
+    },
+    {
+      "id": "run_112_part_3",
+      "name": "Corona Road",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Corona Road: direction inferred from geometry order, elevation unavailable",
+      "length_m": 164,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.946326011317524,
+          -105.59458662114439
         ],
         [
           39.9464151,
@@ -14021,8 +14335,8 @@
           -105.5963212
         ]
       ],
-      "fromNode": "node_79",
-      "toNode": "node_80"
+      "fromNode": "node_91",
+      "toNode": "node_78"
     },
     {
       "id": "run_113",
@@ -14067,8 +14381,8 @@
           -105.5969384
         ]
       ],
-      "fromNode": "node_19",
-      "toNode": "node_81"
+      "fromNode": "node_18",
+      "toNode": "node_79"
     },
     {
       "id": "run_114",
@@ -14105,7 +14419,7 @@
           -105.5863986
         ]
       ],
-      "fromNode": "node_10",
+      "fromNode": "node_9",
       "toNode": "node_3"
     },
     {
@@ -14295,17 +14609,17 @@
           -105.5868229
         ]
       ],
-      "fromNode": "node_82",
-      "toNode": "node_72"
+      "fromNode": "node_80",
+      "toNode": "node_70"
     },
     {
-      "id": "run_120",
+      "id": "run_120_part_1",
       "name": "Reel It In",
       "type": "run",
       "difficulty": "intermediate",
       "directionConfidence": "inferred",
       "directionWarning": "Run Reel It In: direction inferred from geometry order, elevation unavailable",
-      "length_m": 367,
+      "length_m": 130,
       "estimatedMinutes": 0.5,
       "geometry": [
         [
@@ -14323,6 +14637,28 @@
         [
           39.9462325,
           -105.5946912
+        ],
+        [
+          39.946326011317524,
+          -105.59458662114439
+        ]
+      ],
+      "fromNode": "node_81",
+      "toNode": "node_91"
+    },
+    {
+      "id": "run_120_part_2",
+      "name": "Reel It In",
+      "type": "run",
+      "difficulty": "intermediate",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Reel It In: direction inferred from geometry order, elevation unavailable",
+      "length_m": 238,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.946326011317524,
+          -105.59458662114439
         ],
         [
           39.9463322,
@@ -14361,8 +14697,8 @@
           -105.5922506
         ]
       ],
-      "fromNode": "node_83",
-      "toNode": "node_6"
+      "fromNode": "node_91",
+      "toNode": "node_5"
     },
     {
       "id": "run_121",
@@ -14391,8 +14727,8 @@
           -105.5960122
         ]
       ],
-      "fromNode": "node_81",
-      "toNode": "node_20"
+      "fromNode": "node_79",
+      "toNode": "node_19"
     },
     {
       "id": "run_122",
@@ -14433,8 +14769,8 @@
           -105.5734004
         ]
       ],
-      "fromNode": "node_41",
-      "toNode": "node_84"
+      "fromNode": "node_40",
+      "toNode": "node_82"
     },
     {
       "id": "run_123",
@@ -14503,8 +14839,8 @@
           -105.5742547
         ]
       ],
-      "fromNode": "node_41",
-      "toNode": "node_41"
+      "fromNode": "node_40",
+      "toNode": "node_40"
     },
     {
       "id": "run_124",
@@ -14745,18 +15081,18 @@
           -105.5673534
         ]
       ],
-      "fromNode": "node_41",
-      "toNode": "node_53"
+      "fromNode": "node_40",
+      "toNode": "node_52"
     },
     {
-      "id": "run_125",
+      "id": "run_125_part_1",
       "name": "Low down Snowshoe Trail",
       "type": "run",
       "difficulty": "unknown",
       "directionConfidence": "inferred",
       "directionWarning": "Run Low down Snowshoe Trail: direction inferred from geometry order, elevation unavailable",
-      "length_m": 577,
-      "estimatedMinutes": 0.8313839928990719,
+      "length_m": 534,
+      "estimatedMinutes": 0.7698528778475376,
       "geometry": [
         [
           39.9375881,
@@ -14907,6 +15243,28 @@
           -105.5688395
         ],
         [
+          39.937622634030056,
+          -105.5685973487466
+        ]
+      ],
+      "fromNode": "node_40",
+      "toNode": "node_53"
+    },
+    {
+      "id": "run_125_part_2",
+      "name": "Low down Snowshoe Trail",
+      "type": "run",
+      "difficulty": "unknown",
+      "directionConfidence": "inferred",
+      "directionWarning": "Run Low down Snowshoe Trail: direction inferred from geometry order, elevation unavailable",
+      "length_m": 43,
+      "estimatedMinutes": 0.5,
+      "geometry": [
+        [
+          39.937622634030056,
+          -105.5685973487466
+        ],
+        [
           39.9376372,
           -105.5685192
         ],
@@ -14927,8 +15285,8 @@
           -105.56813
         ]
       ],
-      "fromNode": "node_41",
-      "toNode": "node_55"
+      "fromNode": "node_53",
+      "toNode": "node_53"
     },
     {
       "id": "run_126",
@@ -15033,8 +15391,8 @@
           -105.5643595
         ]
       ],
-      "fromNode": "node_53",
-      "toNode": "node_85"
+      "fromNode": "node_52",
+      "toNode": "node_83"
     },
     {
       "id": "run_127",
@@ -15495,7 +15853,7 @@
           -105.5793202
         ]
       ],
-      "fromNode": "node_86",
+      "fromNode": "node_84",
       "toNode": "node_1"
     },
     {
@@ -15525,8 +15883,8 @@
           -105.5828776
         ]
       ],
-      "fromNode": "node_39",
-      "toNode": "node_39"
+      "fromNode": "node_38",
+      "toNode": "node_38"
     },
     {
       "id": "run_129",
@@ -15579,8 +15937,8 @@
           -105.5828756
         ]
       ],
-      "fromNode": "node_87",
-      "toNode": "node_39"
+      "fromNode": "node_85",
+      "toNode": "node_38"
     },
     {
       "id": "run_130",
@@ -15671,8 +16029,8 @@
           -105.5827492
         ]
       ],
-      "fromNode": "node_88",
-      "toNode": "node_36"
+      "fromNode": "node_86",
+      "toNode": "node_35"
     },
     {
       "id": "run_132",
@@ -15785,8 +16143,8 @@
           -105.5986755
         ]
       ],
-      "fromNode": "node_89",
-      "toNode": "node_89"
+      "fromNode": "node_87",
+      "toNode": "node_87"
     },
     {
       "id": "run_133",
@@ -15823,8 +16181,8 @@
           -105.5935837
         ]
       ],
-      "fromNode": "node_23",
-      "toNode": "node_90"
+      "fromNode": "node_22",
+      "toNode": "node_88"
     }
   ],
   "warnings": [
@@ -15951,14 +16309,15 @@
     "Run Jenny Creek Trail: direction inferred from geometry order, elevation unavailable",
     "Run Cheater's Corner: direction inferred from geometry order, elevation unavailable",
     "Run Placer Glades: direction inferred from geometry order, elevation unavailable",
-    "Run Sidewinder: direction inferred from geometry order, elevation unavailable"
+    "Run Sidewinder: direction inferred from geometry order, elevation unavailable",
+    "Added 8 run crossing junctions from geometry intersections"
   ],
   "stats": {
-    "nodesBeforeMerge": 203,
-    "nodesAfterMerge": 90,
-    "nodesMerged": 113,
-    "edgeCount": 133,
-    "runCount": 123,
+    "nodesBeforeMerge": 210,
+    "nodesAfterMerge": 91,
+    "nodesMerged": 119,
+    "edgeCount": 149,
+    "runCount": 139,
     "liftCount": 10,
     "directionWarningCount": 117,
     "unknownDifficulties": [
