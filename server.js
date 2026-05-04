@@ -9,7 +9,7 @@ const { route } = require("./utils/routing");
 
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
-const HOST = process.env.HOST || "127.0.0.1";
+const HOST = process.env.HOST || (process.env.RENDER ? "0.0.0.0" : "127.0.0.1");
 const DATA_DIR = path.join(__dirname, "data");
 const PUBLIC_DIR = path.join(__dirname, "public");
 
@@ -220,7 +220,7 @@ app.use((error, req, res, _next) => {
 });
 
 const server = app.listen(PORT, HOST, () => {
-  console.log(`SlopeNavigator running at http://localhost:${PORT}`);
+  console.log(`SlopeNavigator running on ${HOST}:${PORT}`);
 });
 
 server.on("error", (error) => {

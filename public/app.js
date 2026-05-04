@@ -601,12 +601,20 @@ function populateNodeSelects(nodes) {
 }
 
 function resolveNodeSearch(value) {
-  const query = value.trim().toLowerCase();
+  const query = normalizeSearchText(value);
   if (!query) return null;
   return (
-    state.nodes.find((node) => node.label.toLowerCase() === query) ||
-    state.nodes.find((node) => node.label.toLowerCase().includes(query))
+    state.nodes.find((node) => normalizeSearchText(node.label) === query) ||
+    state.nodes.find((node) => normalizeSearchText(node.label).includes(query))
   );
+}
+
+function normalizeSearchText(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLowerCase();
 }
 
 function applyNodeSearch(kind) {

@@ -24,6 +24,7 @@ const DIFFICULTY_FACTORS = {
 
 const UNKNOWN_DIFFICULTY_WEIGHT = 4;
 const EARTH_RADIUS_M = 6371000;
+const MIN_INTERSECTION_FRACTION = 0.001;
 
 function toFeatureList(collection) {
   if (!collection) return [];
@@ -92,6 +93,10 @@ function toLatLonGeometry(coords) {
     const point = coordToPoint(coord);
     return [point.lat, point.lon];
   });
+}
+
+function latLonToCoord(point) {
+  return [point.lon, point.lat, point.ele].filter((value) => value !== null && value !== undefined);
 }
 
 function coordToPoint(coord) {
@@ -254,6 +259,158 @@ function createEndpoint(rawNodes, point, labelHint) {
   return node.id;
 }
 
+function projectPoint(point, origin) {
+  const latRad = (origin.lat * Math.PI) / 180;
+  return {
+    x: (point.lon - origin.lon) * Math.cos(latRad) * 111320,
+    y: (point.lat - origin.lat) * 110540,
+  };
+}
+
+function segmentIntersection(a1, a2, b1, b2, origin) {
+  const p = projectPoint(a1, origin);
+  const p2 = projectPoint(a2, origin);
+  const q = projectPoint(b1, origin);
+  const q2 = projectPoint(b2, origin);
+  const r = { x: p2.x - p.x, y: p2.y - p.y };
+  const s = { x: q2.x - q.x, y: q2.y - q.y };
+  const denom = r.x * s.y - r.y * s.x;
+  if (Math.abs(denom) < 1e-9) return null;
+
+  const qp = { x: q.x - p.x, y: q.y - p.y };
+  const t = (qp.x * s.y - qp.y * s.x) / denom;
+  const u = (qp.x * r.y - qp.y * r.x) / denom;
+  if (
+    t <= MIN_INTERSECTION_FRACTION ||
+    t >= 1 - MIN_INTERSECTION_FRACTION ||
+    u <= MIN_INTERSECTION_FRACTION ||
+    u >= 1 - MIN_INTERSECTION_FRACTION
+  ) {
+    return null;
+  }
+
+  return {
+    t,
+    u,
+    point: {
+      lat: a1.lat + (a2.lat - a1.lat) * t,
+      lon: a1.lon + (a2.lon - a1.lon) * t,
+      ele: null,
+    },
+  };
+}
+
+function edgeSplitPosition(edge, segmentIndex, fraction) {
+  const coords = edge.directedCoords;
+  let distance = 0;
+  for (let index = 1; index <= segmentIndex; index += 1) {
+    distance += haversineMeters(coordToPoint(coords[index - 1]), coordToPoint(coords[index]));
+  }
+  const segmentLength = haversineMeters(coordToPoint(coords[segmentIndex]), coordToPoint(coords[segmentIndex + 1]));
+  return distance + segmentLength * fraction;
+}
+
+function segmentCoordsBetween(edge, start, end) {
+  const coords = edge.directedCoords;
+  const result = [latLonToCoord(start.point)];
+  for (let index = start.segmentIndex + 1; index <= end.segmentIndex; index += 1) {
+    if (index > 0 && index < coords.length) result.push(coords[index]);
+  }
+  result.push(latLonToCoord(end.point));
+  return result;
+}
+
+function splitRunIntersections(rawEdges, rawNodes, warnings) {
+  const runs = rawEdges.filter((edge) => edge.type === "run" && Array.isArray(edge.directedCoords));
+  const splits = new Map(runs.map((edge) => [edge.id, []]));
+  let intersectionCount = 0;
+
+  for (let i = 0; i < runs.length; i += 1) {
+    for (let j = i + 1; j < runs.length; j += 1) {
+      const a = runs[i];
+      const b = runs[j];
+      for (let ai = 0; ai < a.directedCoords.length - 1; ai += 1) {
+        const a1 = coordToPoint(a.directedCoords[ai]);
+        const a2 = coordToPoint(a.directedCoords[ai + 1]);
+        const origin = a1;
+        for (let bi = 0; bi < b.directedCoords.length - 1; bi += 1) {
+          const b1 = coordToPoint(b.directedCoords[bi]);
+          const b2 = coordToPoint(b.directedCoords[bi + 1]);
+          const hit = segmentIntersection(a1, a2, b1, b2, origin);
+          if (!hit) continue;
+
+          const label = `Junction near ${a.name} / ${b.name}`;
+          const rawId = createEndpoint(rawNodes, hit.point, label);
+          splits.get(a.id).push({
+            rawId,
+            point: hit.point,
+            segmentIndex: ai,
+            position: edgeSplitPosition(a, ai, hit.t),
+          });
+          splits.get(b.id).push({
+            rawId,
+            point: hit.point,
+            segmentIndex: bi,
+            position: edgeSplitPosition(b, bi, hit.u),
+          });
+          intersectionCount += 1;
+        }
+      }
+    }
+  }
+
+  if (!intersectionCount) return rawEdges;
+  warnings.push(`Added ${intersectionCount} run crossing junctions from geometry intersections`);
+
+  const expanded = [];
+  for (const edge of rawEdges) {
+    const edgeSplits = splits.get(edge.id) || [];
+    if (edge.type !== "run" || edgeSplits.length === 0) {
+      expanded.push(edge);
+      continue;
+    }
+
+    const sortedSplits = edgeSplits
+      .sort((a, b) => a.position - b.position)
+      .filter((split, index, list) => index === 0 || split.rawId !== list[index - 1].rawId);
+    const lastSegmentIndex = edge.directedCoords.length - 2;
+    const orderedSplits = [
+      {
+        rawId: edge.fromRaw,
+        point: coordToPoint(edge.directedCoords[0]),
+        segmentIndex: 0,
+        position: 0,
+      },
+      ...sortedSplits,
+      {
+        rawId: edge.toRaw,
+        point: coordToPoint(edge.directedCoords[edge.directedCoords.length - 1]),
+        segmentIndex: lastSegmentIndex,
+        position: edgeSplitPosition(edge, lastSegmentIndex, 1),
+      },
+    ];
+
+    for (let index = 0; index < orderedSplits.length - 1; index += 1) {
+      const start = orderedSplits[index];
+      const end = orderedSplits[index + 1];
+      const coords = segmentCoordsBetween(edge, start, end);
+      const lengthM = lengthMeters(coords);
+      expanded.push({
+        ...edge,
+        id: `${edge.id}_part_${index + 1}`,
+        fromRaw: start.rawId,
+        toRaw: end.rawId,
+        length_m: Math.round(lengthM),
+        estimatedMinutes: estimateMinutes("run", lengthM, edge.difficulty),
+        geometry: toLatLonGeometry(coords),
+        directedCoords: coords,
+      });
+    }
+  }
+
+  return expanded;
+}
+
 function buildGraph(rawData, options = {}) {
   const warnings = [];
   const rawNodes = new Map();
@@ -322,15 +479,17 @@ function buildGraph(rawData, options = {}) {
       length_m: Math.round(lengthM),
       estimatedMinutes: estimateMinutes("run", lengthM, difficulty),
       geometry: toLatLonGeometry(directedCoords),
+      directedCoords,
       fromRaw,
       toRaw,
     });
   }
 
+  const routableRawEdges = splitRunIntersections(rawEdges, rawNodes, warnings);
   const rawNodeList = Array.from(rawNodes.values());
   const beforeMerge = rawNodeList.length;
   const { nodes, idMap } = mergeGroups(rawNodeList, options.snapDistanceM || 80);
-  const edges = rawEdges.map(({ fromRaw, toRaw, ...edge }) => ({
+  const edges = routableRawEdges.map(({ fromRaw, toRaw, directedCoords, ...edge }) => ({
     ...edge,
     fromNode: idMap.get(fromRaw),
     toNode: idMap.get(toRaw),
